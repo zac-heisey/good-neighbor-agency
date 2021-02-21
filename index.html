@@ -1,1 +1,17 @@
-<!doctype html><html><head><title>Page title</title></head><body><p>Hi</p></body></html>
+---
+layout: layouts/page.njk
+title: Homepage
+description: This is the homepage
+---
+
+{% for section in collections.sections %}
+
+  <section id="{{ section.title }}">
+
+    <h2>{{ section.data.title }}</h2>
+    <p>{{ section.data.description }}</p>
+    <p>{{ section.templateContent | safe }}</p>
+
+  </section>
+
+{% endfor %}

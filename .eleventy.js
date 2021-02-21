@@ -3,14 +3,22 @@
 module.exports = function(eleventyConfig) {
 
   // Add passthrough directories
-  eleventyConfig.addPassthroughCopy('images');
+  eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.addPassthroughCopy('admin');
+
+  // Home sections collection
+  eleventyConfig.addCollection('sections', collection => {
+
+    return collection.getFilteredByGlob('_sections/*.njk');
+
+  });
 
   // Manual passthrough template extensions
   return {
 
-    templateFormats: ['md', 'html', 'yml', 'css', 'js', 'liquid', 'njk'],
-    passthroughFileCopy: true
+    markdownTemplateEngine: 'njk',
+    dataTemplateEngine: 'njk',
+    htmlTemplateEngine: 'njk'
 
   };
 
