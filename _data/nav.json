@@ -1,0 +1,39 @@
+[
+
+  {
+
+    "name": "Home",
+    "url": "#home"
+
+  },
+
+  {
+
+    "name": "About",
+    "url": "#about"
+
+  },
+
+  {
+
+    "name": "Clients",
+    "url": "#clients"
+
+  },
+
+  {
+
+    "name": "Work",
+    "url": "#work"
+
+  },
+
+  {
+
+    "name": "Contact",
+    "url": "#contact"
+
+  }
+
+
+]

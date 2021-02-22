@@ -14,14 +14,24 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
+    <!-- Netlify Identity widget (homepage only) -->
+    {% if page.url == "/" %}
+
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    {% endif %}
+
   </head>
 
   <body>
 
-    <!-- Include "partials/header.html" here -->
+    <!-- Header -->
+    {% include "partials/header.njk" %}
 
+    <!-- Main -->
     {% block content %}{% endblock %}
 
+    <!-- Footer -->
     {% include "partials/footer.njk" %}
 
   </body>
