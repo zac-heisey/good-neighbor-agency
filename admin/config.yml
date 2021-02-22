@@ -15,16 +15,6 @@ collections:
       - { label: "Image", name: "image", widget: "image", hint: "Ideal Width: 1208 pixels", required: false }
       - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: "[post]" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
-    folder: "/"
-    create: true
-    slug: "{{ slug }}"
-    fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
   - name: "sections"
     label: "Sections"
     folder: "sections"
