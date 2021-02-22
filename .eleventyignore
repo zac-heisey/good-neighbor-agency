@@ -1,0 +1,7 @@
+## Ignore these files/directories from being processed by Eleventy
+## i.e. keep out of _site/
+
+# Files
+README.md
+
+# Directories

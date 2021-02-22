@@ -1,3 +1,6 @@
+## Ignore these files/directories from git version control
+## i.e. keep out of GitHub repo
+
 # Misc
 *.log
 npm-debug.*

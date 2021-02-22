@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
   // Home sections collection
   eleventyConfig.addCollection('sections', collection => {
 
-    return collection.getFilteredByGlob('_sections/*.njk');
+    return collection.getFilteredByGlob('sections/*.njk');
 
   });
 

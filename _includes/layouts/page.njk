@@ -2,10 +2,10 @@
 
 {% block content %}
 
-<section>
+<main id="main" role="main" data-page="{% if page.fileSlug == "" %}index{% else %}{{ page.fileSlug }}{% endif %}">
 
   {{ content | safe }}
 
-</section>
+</main>
 
 {% endblock %}
