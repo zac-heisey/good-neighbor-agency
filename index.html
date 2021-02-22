@@ -8,9 +8,13 @@ description: This is the homepage
 
   <section id="{{ section.data.title | lower }}">
 
-    <h2>{{ section.data.title }}</h2>
-    <p>{{ section.data.description }}</p>
-    <p>{{ section.templateContent | safe }}</p>
+    <header>
+      <h1>{{ section.data.title }}</h1>
+    </header>
+
+    <div class="content">
+      {{ section.templateContent | safe }}
+    </div>
 
   </section>
 

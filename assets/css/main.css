@@ -1,7 +1,93 @@
-/*== Main CSS ==*/
+/*== Global Styles ==*/
 
-h1 {
+/* Box sizing rules */
+*,
+*::before,
+*::after {
 
-  color: red;
-  
+  box-sizing: border-box;
+
+}
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+
+/* Set core body defaults */
+body {
+
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+
+}
+
+header#menu {
+
+  position: fixed;
+  left: 0;
+  padding: 0 2rem;
+
+}
+
+main header {
+
+  display: flex;
+  align-items: center;
+  color: #fff;
+  min-height: 300px;
+  padding: 2rem;
+
+}
+
+.content {
+
+  padding: 2rem;
+
+}
+
+#home header {
+
+  background-color: coral;
+
+}
+
+#about header {
+
+  background-color: turquoise;
+
+}
+
+#work header {
+
+  background-color: goldenrod;
+
+}
+
+#contact header {
+
+  background-color: greenyellow;
+
+}
+
+
+@media (min-width: 576px) {
+
+  html {
+
+    overflow: hidden;
+
+  }
+
+  main header, .content {
+
+    min-height: 50vh;
+
+  }
+
 }
