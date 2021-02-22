@@ -1,7 +1,7 @@
 ---
 title: Home
 description: Home Description
-order: 3
+order: 1
 permalink: false
 ---
 
