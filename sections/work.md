@@ -1,7 +1,7 @@
 ---
 title: Work
 description: Work Description
-order: 1
+order: 3
 permalink: false
 ---
 
