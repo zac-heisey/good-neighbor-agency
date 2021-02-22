@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.addPassthroughCopy('admin');
 
-  // Home sections collection (sorted by 'order' field)
+  // Sections collection (sorted by 'order' field)
   eleventyConfig.addCollection('sections', collection => {
 
     return collection.getFilteredByGlob('sections/*.md')
