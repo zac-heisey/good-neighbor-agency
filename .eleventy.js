@@ -6,10 +6,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.addPassthroughCopy('admin');
 
-  // Home sections collection
+  // Home sections collection (sorted by 'order' field)
   eleventyConfig.addCollection('sections', collection => {
 
-    return collection.getFilteredByGlob('sections/*.md');
+    return collection.getFilteredByGlob('sections/*.md')
+      .sort((a, b) => a.data.order > b.data.order ? 1 : -1);
 
   });
 

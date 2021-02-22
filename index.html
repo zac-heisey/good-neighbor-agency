@@ -6,7 +6,7 @@ description: This is the homepage
 
 {% for section in collections.sections %}
 
-  <section id="{{ section.title }}">
+  <section id="{{ section.data.title | lower }}">
 
     <h2>{{ section.data.title }}</h2>
     <p>{{ section.data.description }}</p>
