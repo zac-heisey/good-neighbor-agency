@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+  branch: netlify # Branch to update (optional; defaults to master)
+media_folder: "assets/images" # Tells Netlify CMS where to upload new photos
+collections:
+  - name: "post" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{ slug }}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", hint: "Ideal Width: 1208 pixels", required: false }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: "[post]" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    folder: "/"
+    create: true
+    slug: "{{ slug }}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "sections"
+    label: "Sections"
+    folder: "sections"
+    create: false
+    slug: "{{ slug }}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
