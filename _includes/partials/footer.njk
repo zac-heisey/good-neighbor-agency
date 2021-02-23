@@ -1,6 +1,40 @@
 <footer>
 
+  <!-- Inline Scripts -->
+  <script type="text/javascript">
+
+    // IIFE wrapper start
+    (function() {
+
+      //== Load Fonts (prevent FOIT) ==//
+
+      // https://gomakethings.com/preventing-foit-with-web-fonts-using-the-vanilla-js-fonts.load-method/
+
+      {
+
+        // If the browser supports the fonts.load() method
+        if ('fonts' in document) {
+
+        	// When all fonts are loaded
+        	Promise.all([
+        		document.fonts.load('400 1em DM Serif Display'),
+        		document.fonts.load('400 1em Open Sans'),
+        		document.fonts.load('700 1em Open Sans')
+        	]).then(function () {
+        		// The font is loaded
+        		// Add our 'fonts-loaded' class
+        		document.documentElement.className += 'fonts-loaded';
+        	});
+
+        }
+
+      }
+
+    }()); // IIFE wrapper end
+
+  </script>
+
   <!-- External Scripts -->
-  <script src="/assets/js/main.js" charset="utf-8"></script>
+  {# TBD #}
 
 </footer>

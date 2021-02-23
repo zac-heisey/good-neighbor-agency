@@ -1,17 +1,148 @@
+/*== Variables ==*/
+
+/* Fonts */
+
+@font-face {
+
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-style: normal;
+  src: local('DM Serif Display Regular'), url('/css/fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Open Sans Regular'), url('/css/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Open Sans Bold'), url('/css/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-display: swap;
+
+}
+
+:root {
+
+  --system-font: Times, Georgia, serif;
+  --heading-font: 'DM Serif Display', Times, serif;
+  --body-font: 'Open Sans', Arial, sans-serif;
+
+  /* Colors */
+
+
+  /* Breakpoints (for reference only - CSS variables can't be used in media queries) */
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+
+}
+
 /*== Global Styles ==*/
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
+/* Resets */
+
+/* Universal box sizing > includes padding and border,
+but NOT margin, in total box size */
+*, *:before, *:after {
 
   box-sizing: border-box;
 
 }
 
+/* Removes margin & padding from all browsers */
+html, body, div, ul, li,
+h1, h2, h3, h4, h5, h6 {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Removes underline from all link states */
+a:link, a:visited, a:hover, a:active {
+
+  text-decoration: none;
+
+}
+
+/* Make images easier to work with */
+img {
+
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+}
+
+/* Screen readers only */
+.sr-only, .sr-only-focusable {
+
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+
+}
+
+.sr-only-focusable:focus {
+
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  clip: initial;
+  border: initial;
+
+}
+
+/* Common Styles */
+
+/* Set default scroll behavior */
 html {
 
   scroll-behavior: smooth;
+
+}
+
+/* Initially load system font while custom fonts load */
+body, h1, h2, h3 {
+
+  font-family: var(--system-font);
+
+}
+
+/* Replace system font with custom fonts once loaded */
+.fonts-loaded body {
+
+  font-family: var(--body-font);
+
+}
+
+.fonts-loaded h1,
+.fonts-loaded h2,
+.fonts-loaded h3 {
+
+  font-family: var(--heading-font);
 
 }
 
@@ -50,6 +181,8 @@ main header {
   padding: 2rem;
 
 }
+
+/*== Section Styles ==*/
 
 #home header {
 

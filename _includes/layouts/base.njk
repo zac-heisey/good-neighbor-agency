@@ -12,6 +12,13 @@
     <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- Stylesheets -->
+
+    <!-- Preload Fonts -->
+    <link rel="preload" href="/assets/css/fonts/DMSerifDisplay-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="/assets/css/fonts/OpenSans-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="/assets/css/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- Netlify Identity widget (homepage only) -->
