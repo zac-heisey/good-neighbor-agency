@@ -9,11 +9,15 @@ description: This is the homepage
   <section id="{{ section.data.title | lower }}">
 
     <header>
-      <h1>{{ section.data.title }}</h1>
+      <div class="lock">
+        <h1>{{ section.data.title }}</h1>
+      </div>
     </header>
 
     <div class="content">
-      {{ section.templateContent | safe }}
+      <div class="lock">
+        {{ section.templateContent | safe }}
+      </div>
     </div>
 
   </section>

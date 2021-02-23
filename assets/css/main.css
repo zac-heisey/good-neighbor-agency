@@ -1,13 +1,13 @@
 /*== Variables ==*/
 
-/* Fonts */
+/* Import fonts */
 
 @font-face {
 
   font-family: 'DM Serif Display';
   font-weight: 400;
   font-style: normal;
-  src: local('DM Serif Display Regular'), url('/css/fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+  src: local('DM Serif Display Regular'), url('/assets/css/fonts/DMSerifDisplay-Regular.ttf') format('truetype');
   font-display: swap;
 
 }
@@ -17,7 +17,7 @@
   font-family: 'Open Sans';
   font-weight: 400;
   font-style: normal;
-  src: local('Open Sans Regular'), url('/css/fonts/OpenSans-Regular.ttf') format('truetype');
+  src: local('Open Sans Regular'), url('/assets/css/fonts/OpenSans-Regular.ttf') format('truetype');
   font-display: swap;
 
 }
@@ -27,22 +27,25 @@
   font-family: 'Open Sans';
   font-weight: 700;
   font-style: normal;
-  src: local('Open Sans Bold'), url('/css/fonts/OpenSans-Bold.ttf') format('truetype');
+  src: local('Open Sans Bold'), url('/assets/css/fonts/OpenSans-Bold.ttf') format('truetype');
   font-display: swap;
 
 }
 
 :root {
 
+  /* Fonts */
   --system-font: Times, Georgia, serif;
   --heading-font: 'DM Serif Display', Times, serif;
   --body-font: 'Open Sans', Arial, sans-serif;
 
   /* Colors */
-
+  --pink: #ff7473;
+  --purple: #34314c;
+  --yellow: #ffc952;
+  --white: #fff;
 
   /* Breakpoints (for reference only - CSS variables can't be used in media queries) */
-
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
@@ -124,10 +127,59 @@ html {
 
 }
 
+/* Shared lock */
+.lock {
+
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+
+}
+
+section > header > .lock {
+
+  display: flex;
+
+}
+
 /* Initially load system font while custom fonts load */
 body, h1, h2, h3 {
 
+  color: var(--purple);
   font-family: var(--system-font);
+
+}
+
+p {
+
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
+
+}
+
+h1 {
+
+  font-size: clamp(3.157rem, 5.56vw, 5.61rem);
+  line-height: 75%;
+  letter-spacing: -1px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(to right, var(--yellow), var(--yellow));
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% 20%;
+  padding: 0 3px 7px 3px;
+
+}
+
+h2 {
+
+  font-size: clamp(2.369rem, 2.78vw, 4.209rem);
+
+}
+
+h3 {
+
+  font-size: clamp(1.777rem, 1.39vw, 3.157rem);
 
 }
 
@@ -146,7 +198,6 @@ body, h1, h2, h3 {
 
 }
 
-
 /* Set core body defaults */
 body {
 
@@ -161,50 +212,48 @@ body {
 header#menu {
 
   position: fixed;
-  left: 0;
-  padding: 0 2rem;
-
-}
-
-main header {
-
-  display: flex;
-  align-items: center;
-  color: #fff;
-  min-height: 300px;
-  padding: 2rem;
-
-}
-
-.content {
-
-  padding: 2rem;
+  width: 100%;
 
 }
 
 /*== Section Styles ==*/
 
+section header {
+
+  display: flex;
+  align-items: center;
+  color: #fff;
+  min-height: 300px;
+
+}
+
 #home header {
 
-  background-color: coral;
+  background-color: rgba(255, 116, 115, 0.65);
 
 }
 
 #about header {
 
-  background-color: turquoise;
+  background-color: rgba(255, 201, 82, 0.65);
+
+}
+
+#clients header {
+
+  background-color: rgba(71, 184, 224, 0.65);
 
 }
 
 #work header {
 
-  background-color: goldenrod;
+  background-color: rgba(197, 233, 155, 0.65);
 
 }
 
 #contact header {
 
-  background-color: greenyellow;
+  background-color: rgba(213, 159, 255, 0.65);
 
 }
 

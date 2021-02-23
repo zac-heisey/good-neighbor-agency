@@ -1,13 +1,17 @@
 <header id="menu">
 
-  <nav>
+  <div class="lock">
 
-    {% for link in nav %}
+      <nav>
 
-      <a href="{{ link.url }}">{{ link.name }}</a>
+        {% for link in nav %}
 
-    {% endfor %}
+          <a href="{{ link.url }}">{{ link.name }}</a>
 
-  </nav>
+        {% endfor %}
+
+      </nav>
+
+  </div>
 
 </header>
