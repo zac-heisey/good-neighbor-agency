@@ -4,8 +4,8 @@ backend:
 publish_mode: editorial_workflow # Adds interface for drafting, previewing, and approving content
 media_folder: "assets/images" # Tells Netlify CMS where to upload new photos
 collections:
-  - name: "post" # Used in routes, e.g., /admin/collections/blog
-    label: "Posts" # Used in the UI
+  - label: "Posts" # Used in the UI
+    name: "post" # Used in routes, e.g., /admin/collections/blog
     folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{ slug }}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -16,11 +16,11 @@ collections:
       - { label: "Image", name: "image", widget: "image", hint: "Ideal Width: 1208 pixels", required: false }
       - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: "[post]" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "sections"
-    label: "Sections"
+  - label: "Sections"
+    name: "sections"
     description: "The main content sections of the website accessible via the navigation menu"
     folder: "sections"
-    create: false
+    create: true
     slug: "{{ slug }}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
@@ -28,4 +28,26 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Order", name: "order", widget: "number" }
       - { label: "Permalink", name: "permalink", widget: "hidden", default: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Header"
+        name: "header"
+        widget: "object"
+        fields:
+          - { label: "Main Heading", name: "main-heading", widget: "markdown" }
+          - { label: "Sub-Heading", name: "sub-heading", widget: "text" }
+          - { label: "Background Image", name: "bg-image", widget: "image" }
+      - label: "Blocks"
+        name: "blocks"
+        widget: "list"
+        types:
+          - label: "Content"
+            name: "content"
+            widget: "object"
+            fields:
+              - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Image Grid"
+            name: "image-grid"
+            widget: "object"
+            fields:
+              - { label: "Image 1", name: "image-1", widget: "image", required: false }
+              - { label: "Image 2", name: "image-2", widget: "image", required: false }
+              - { label: "Image 3", name: "image-3", widget: "image", required: false }
