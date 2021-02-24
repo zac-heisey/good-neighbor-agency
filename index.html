@@ -10,12 +10,19 @@ description: This is the homepage
 
     <header>
       <div class="lock">
-        <h1>{{ section.data.title }}</h1>
+        <h1>{{ section.data.header.mainHeading }}</h1>
       </div>
     </header>
 
     <div class="content">
       <div class="lock">
+
+        {% for block in section.data.blocks %}
+
+        {{ block.body }}
+
+        {% endfor %}
+
         {{ section.templateContent | safe }}
       </div>
     </div>

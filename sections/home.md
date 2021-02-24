@@ -4,11 +4,11 @@ description: Home Description
 order: 1
 permalink: false
 header:
-  main-heading: |-
+  mainHeading: |-
     Good\
     Neighbor
-  sub-heading: Digital Solutions for Social Impact
-  bg-image: https://images.unsplash.com/photo-1541738166768-2e00b3f3098a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80
+  subHeading: Digital Solutions for Social Impact
+  bgImage: https://images.unsplash.com/photo-1541738166768-2e00b3f3098a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80
 blocks:
   - type: content
     body: >-
