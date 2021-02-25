@@ -10,7 +10,7 @@ description: This is the homepage
 
     <header>
       <div class="lock">
-        <h1>{{ section.data.header.mainHeading }}</h1>
+        <h1>{{ section.data.header.mainHeading | safe }}</h1>
       </div>
     </header>
 
@@ -19,7 +19,7 @@ description: This is the homepage
 
         {% for block in section.data.blocks %}
 
-        {{ block.body }}
+        {{ block.body | markdownify | safe }}
 
         {% endfor %}
 
