@@ -32,9 +32,9 @@ collections:
         name: "header"
         widget: "object"
         fields:
-          - { label: "Main Heading", name: "main-heading", widget: "markdown" }
-          - { label: "Sub-Heading", name: "sub-heading", widget: "text" }
-          - { label: "Background Image", name: "bg-image", widget: "image" }
+          - { label: "Main Heading", name: "mainHeading", widget: "markdown" }
+          - { label: "Sub-Heading", name: "subHeading", widget: "text" }
+          - { label: "Background Image", name: "bgImage", widget: "image" }
       - label: "Blocks"
         name: "blocks"
         widget: "list"
@@ -48,6 +48,6 @@ collections:
             name: "image-grid"
             widget: "object"
             fields:
-              - { label: "Image 1", name: "image-1", widget: "image", required: false }
-              - { label: "Image 2", name: "image-2", widget: "image", required: false }
-              - { label: "Image 3", name: "image-3", widget: "image", required: false }
+              - { label: "Image 1", name: "image1", widget: "image", required: false }
+              - { label: "Image 2", name: "image2", widget: "image", required: false }
+              - { label: "Image 3", name: "image3", widget: "image", required: false }
