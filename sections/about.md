@@ -3,6 +3,12 @@ title: About
 description: About Description
 order: 2
 permalink: false
+header:
+  mainHeading: Nice to<br>Meet You!
+  subHeading: We're small, tight-knit, and focused on one thing -<br> doing amazing work for organizations that give a damn.
+  bgImage:
+blocks:
+  - type: content
+    body: >-
+      ## We are Good Neighbor.
 ---
-
-**About**...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

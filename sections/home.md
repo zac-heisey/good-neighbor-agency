@@ -6,7 +6,7 @@ permalink: false
 header:
   mainHeading: Good<br>Neighbor
   subHeading: Digital Solutions for Social Impact
-  bgImage: "#"
+  bgImage:
 blocks:
   - type: content
     body: >-

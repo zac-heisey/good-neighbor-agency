@@ -145,12 +145,6 @@ body, h1, h2, h3 {
 
 }
 
-p {
-
-  font-size: clamp(1rem, 1.25vw, 1.125rem);
-
-}
-
 h1 {
 
   font-size: clamp(3.157rem, 5.56vw, 5.61rem);
@@ -160,8 +154,8 @@ h1 {
   background-image: linear-gradient(to right, var(--yellow), var(--yellow));
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-size: 100% 20%;
-  padding: 0 3px 7px 3px;
+  background-size: 100% 10px;
+  padding: 0 3px 18px 3px;
 
 }
 
@@ -174,6 +168,18 @@ h2 {
 h3 {
 
   font-size: clamp(1.777rem, 1.39vw, 3.157rem);
+
+}
+
+p {
+
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
+
+}
+
+p.sub-heading {
+
+  font-size: clamp(1rem, 1.39vw, 1.25rem);
 
 }
 
@@ -215,9 +221,15 @@ header#menu {
 section header {
 
   display: flex;
-  align-items: center;
-  color: #fff;
+  align-items: flex-end;
   min-height: 300px;
+
+}
+
+section header > .lock h1,
+section header > .lock h1 {
+
+  display: inline-block;
 
 }
 
@@ -260,9 +272,15 @@ section header {
 
   }
 
-  main header, .content {
+  main header {
 
-    min-height: 50vh;
+    min-height: 45vh;
+
+  }
+
+  .content {
+
+    min-height: 55vh;
 
   }
 
