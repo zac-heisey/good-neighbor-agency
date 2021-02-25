@@ -7,6 +7,11 @@ header:
   mainHeading: Good<br>Neighbor
   subHeading: Digital Solutions for Social Impact
   bgImage: https://images.unsplash.com/photo-1541738166768-2e00b3f3098a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80
+  main-heading: |-
+    Good\
+    Neighbor
+  sub-heading: Yolo Bigotè
+  bg-image: https://images.unsplash.com/photo-1541738166768-2e00b3f3098a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80
 blocks:
   - type: content
     body: >-
@@ -19,8 +24,5 @@ blocks:
       We believe in outcomes over deliverables , solutions over services, and people over profit. Take a look at some of our clients and projects to get a feel for the type of work we do. Ready to get to work on your next project? So are we.
 
 
-      Welcome to the neighborhood.
-  - type: content
-    body: <h2>This is a test heading</h2><p>adome some content</p><p>More content
-      here!!!</p>
+      **Welcome to the neighborhood.**
 ---
