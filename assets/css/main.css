@@ -137,12 +137,6 @@ html {
 
 }
 
-section > header > .lock {
-
-  display: flex;
-
-}
-
 /* Initially load system font while custom fonts load */
 body, h1, h2, h3 {
 

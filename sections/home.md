@@ -20,16 +20,4 @@ blocks:
 
 
       **Welcome to the neighborhood.**
-  - type: content
-    body: >-
-      ## Another H2 Heading Right Hurrrr
-
-
-      ### And this is an H3 Heading Over Hurrrrr
-
-
-      Lorem Ipsum Some stuff and shit
-
-
-      *Lorem Ipsum* text **aaskfjlksdjfs sdkfjklsdjfdsjfdjfkldjf** owieuf0iowuf0sdu90 ed. This is link [right here](https://google.com).
 ---

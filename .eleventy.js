@@ -14,7 +14,9 @@ module.exports = function(eleventyConfig) {
 
   });
 
-  // Markdown-It 'markdownify' filter (https://github.com/BradCoffield/kidlitconnection/commit/e42a6dee1021be4b1869e4b62582230aed5db84e)
+  /* Markdown-It 'markdownify' filter
+   * source: https://github.com/BradCoffield/kidlitconnection/commit/e42a6dee1021be4b1869e4b62582230aed5db84e)
+  */
   const md = require('markdown-it')({
 
     html: true,
@@ -25,7 +27,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter('markdownify', (markdownString) =>
     md.render(markdownString)
-    
+
   );
 
   // Manual passthrough template extensions
