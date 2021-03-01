@@ -118,7 +118,7 @@ img {
 
 }
 
-/* Common Styles */
+/*== Common Styles ==*/
 
 /* Set default scroll behavior */
 html {
@@ -133,7 +133,7 @@ html {
   width: 100%;
   max-width: 1150px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 2rem;
 
 }
 
@@ -209,10 +209,17 @@ body {
 
 }
 
+/* Header menu styles */
 header#menu {
 
   position: fixed;
   width: 100%;
+
+}
+
+header#menu .lock {
+
+  padding: 1rem 2rem;
 
 }
 

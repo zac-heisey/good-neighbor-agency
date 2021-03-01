@@ -8,12 +8,12 @@ header:
   subHeading: Digital Solutions for Social Impact
   bgImage:
 blocks:
-  - type: content
+  - type: richText
     body: >-
       ## Your Digital Agency Next Door.
 
 
-      We help purpose-driven brands and organizations solve problems through strategy, design, and technology. If your mission is to do good, we can help you do it better. Learn more about who we are and what we do.
+      We help purpose-driven brands and organizations solve problems through strategy, design, and technology. If your mission is to do good, we can help you do it better. Learn more about [who we are](/#about) and [what we do](/#work).
 
 
       We believe in outcomes over deliverables , solutions over services, and people over profit. Take a look at some of our clients and projects to get a feel for the type of work we do. Ready to get to work on your next project? So are we.

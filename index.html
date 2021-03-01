@@ -4,28 +4,34 @@ title: Homepage
 description: This is the homepage
 ---
 
+{% import "partials/macros.njk" as macro with context %}
+
 {% for section in collections.sections %}
 
   <section id="{{ section.data.title | lower }}">
 
-    <header>
-      <div class="lock">
-        <h1>{{ section.data.header.mainHeading | safe }}</h1>
-        <p class="sub-heading">{{ section.data.header.subHeading | safe }}</p>
-      </div>
-    </header>
+    <!-- Section Header -->
+    {{ macro.sectionHeader(section.data.header.mainHeading, section.data.header.subHeading) }}
 
+    <!-- Section Content -->
     <div class="content">
-      <div class="lock">
 
-        {% for block in section.data.blocks %}
+    {% for block in section.data.blocks %}
 
-        {{ block.body | markdownify | safe }}
+      {% if block.type == 'richText' %}
 
-        {% endfor %}
+        {{ macro.richText(block.body) }}
 
-        {{ section.templateContent | safe }}
-      </div>
+      {% endif %}
+
+      {% if block.type == 'imageGrid' %}
+
+        {{ macro.imageGrid(block.image1, block.image2, block.image3) }}
+
+      {% endif %}
+
+    {% endfor %}
+
     </div>
 
   </section>

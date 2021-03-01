@@ -8,7 +8,7 @@ header:
   subHeading: We're small, tight-knit, and focused on one thing -<br> doing amazing work for organizations that give a damn.
   bgImage:
 blocks:
-  - type: content
+  - type: richText
     body: >-
       ## We are Good Neighbor.
 ---

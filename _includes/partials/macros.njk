@@ -1,0 +1,31 @@
+<!-- Section Header -->
+{% macro sectionHeader(main, sub) %}
+
+<header>
+
+  <div class="lock">
+    <h1>{{ main | safe }}</h1>
+    <p class="sub-heading">{{ sub | safe }}</p>
+  </div>
+
+</header>
+
+{% endmacro %}
+
+<!-- Rich Text block -->
+{% macro richText(body) %}
+
+<div class="richText">
+
+  <div class="lock">
+    {{ body | markdownify | safe }}
+  </div>
+
+</div>
+
+{% endmacro %}
+
+<!-- Image Grid block -->
+{% macro imageGrid(args) %}
+
+{% endmacro %}
