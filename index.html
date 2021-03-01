@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-title: Homepage
+title: Digital Solutions for Social Impact
 description: This is the homepage
 ---
 
@@ -16,21 +16,7 @@ description: This is the homepage
     <!-- Section Content -->
     <div class="content">
 
-    {% for block in section.data.blocks %}
-
-      {% if block.type == 'richText' %}
-
-        {{ macro.richText(block.body) }}
-
-      {% endif %}
-
-      {% if block.type == 'imageGrid' %}
-
-        {{ macro.imageGrid(block.image1, block.image2, block.image3) }}
-
-      {% endif %}
-
-    {% endfor %}
+    {% include "partials/blocks.njk" %}
 
     </div>
 

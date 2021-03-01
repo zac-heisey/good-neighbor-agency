@@ -15,7 +15,7 @@
 <!-- Rich Text block -->
 {% macro richText(body) %}
 
-<div class="richText">
+<div class="rich-text">
 
   <div class="lock">
     {{ body | markdownify | safe }}
@@ -26,6 +26,27 @@
 {% endmacro %}
 
 <!-- Image Grid block -->
-{% macro imageGrid(args) %}
+{% macro imageGrid(images) %}
+
+<div class="image-grid">
+
+  <div class="lock">
+    {% for image in images %}
+    <div class="container" tabindex="0">
+      <img src="{{ image.imageSrc }}" alt="{{ image.imageOverlayTitle }}">
+      {% if image.imageOverlayTitle and image.imageOverlayText %}
+      <!-- Text overlay -->
+      <div class="text-overlay">
+        <p class="sub-heading">{{ image.imageOverlayTitle }}</p>
+        <div class="wrapper">
+          {{ image.imageOverlayText }}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
 
 {% endmacro %}

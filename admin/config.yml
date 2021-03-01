@@ -34,7 +34,7 @@ collections:
         fields:
           - { label: "Main Heading", name: "mainHeading", widget: "markdown" }
           - { label: "Sub-Heading", name: "subHeading", widget: "text" }
-          - { label: "Background Image", name: "bgImage", widget: "image" }
+          - { label: "Background Image", name: "bgImage", widget: "image", required: false }
       - label: "Blocks"
         name: "blocks"
         widget: "list"
@@ -52,6 +52,6 @@ collections:
                 name: "image"
                 widget: "list"
                 fields:
-                  - { label: "Choose Image", name: "imageSrc", widget: "image", required: false }
                   - { label: "Image Overlay Title", name: "imageOverlayTitle", widget: "string", required: false }
                   - { label: "Image Overlay Text", name: "imageOverlayText", widget: "markdown", required: false }
+                  - { label: "Choose Image", name: "imageSrc", widget: "image", required: false }

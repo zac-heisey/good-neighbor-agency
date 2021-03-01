@@ -6,7 +6,7 @@
 
         {% for link in nav %}
 
-          <a href="{{ link.url }}">{{ link.name }}</a>
+          <a href="{{ link.url }}" data-text="{{ link.name }}">{{ link.name }}</a>{% if not loop.last %} · {% endif %}
 
         {% endfor %}
 
