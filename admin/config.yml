@@ -39,15 +39,19 @@ collections:
         name: "blocks"
         widget: "list"
         types:
-          - label: "Content"
-            name: "content"
+          - label: "Rich Text"
+            name: "richText"
             widget: "object"
             fields:
               - { label: "Body", name: "body", widget: "markdown" }
           - label: "Image Grid"
-            name: "image-grid"
+            name: "imageGrid"
             widget: "object"
             fields:
-              - { label: "Image 1", name: "image1", widget: "image", required: false }
-              - { label: "Image 2", name: "image2", widget: "image", required: false }
-              - { label: "Image 3", name: "image3", widget: "image", required: false }
+              - label: "Image"
+                name: "image"
+                widget: "list"
+                fields:
+                  - { label: "Choose Image", name: "imageSrc", widget: "image", required: false }
+                  - { label: "Image Overlay Title", name: "imageOverlayTitle", widget: "string", required: false }
+                  - { label: "Image Overlay Text", name: "imageOverlayText", widget: "markdown", required: false }
