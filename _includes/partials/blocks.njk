@@ -1,17 +1,13 @@
-{% for block in section.data.blocks %}
+{% if block.type == 'richText' %}
 
-  {% if block.type == 'richText' %}
+  {# Rich Text block #}
+  {{ macro.richText(block.body) }}
 
-    {# Rich Text block #}
-    {{ macro.richText(block.body) }}
+{% endif %}
 
-  {% endif %}
+{% if block.type == 'imageGrid' %}
 
-  {% if block.type == 'imageGrid' %}
+  {# Image Grid block #}
+  {{ macro.imageGrid(block.image) }}
 
-    {# Image Grid block #}
-    {{ macro.imageGrid(block.image) }}
-
-  {% endif %}
-
-{% endfor %}
+{% endif %}

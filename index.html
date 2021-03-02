@@ -17,7 +17,11 @@ description: This is the homepage
     <div class="content">
 
       <div class="lock">
-        {% include "partials/blocks.njk" %}
+        {% for block in section.data.blocks %}
+
+          {% include "partials/blocks.njk" %}
+
+        {% endfor %}
       </div>
 
     </div>
