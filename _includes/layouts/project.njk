@@ -1,0 +1,31 @@
+{% extends "layouts/base.njk" %}
+
+{% import "partials/macros.njk" as macro with context %}
+
+{% block content %}
+
+<main id="main" role="main" data-page="{% if page.fileSlug == "" %}index{% else %}{{ page.fileSlug }}{% endif %}">
+
+  <section id="{{ title | lower }}">
+
+    <!-- Section Header -->
+    {{ macro.sectionHeader(header.mainHeading, header.subHeading) }}
+
+    <!-- Section Content -->
+    <div class="content">
+
+      <div class="lock">
+        {% for block in blocks %}
+
+          {% include "partials/blocks.njk" %}
+
+        {% endfor %}
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+{% endblock %}
