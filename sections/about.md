@@ -5,7 +5,7 @@ order: 2
 permalink: false
 header:
   mainHeading: Nice to<br>Meet You!
-  subHeading: We're small, tight-knit, and focused on one thing -<br> doing
+  subHeading: We're small, tight-knit, and focused on one thing - doing
     amazing work for organizations that give a damn.
   bgImage:
 blocks:

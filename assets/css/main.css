@@ -295,6 +295,12 @@ section header > .lock h1 {
 
 }
 
+section header > .lock p.sub-heading {
+
+  max-width: 520px;
+
+}
+
 @media (min-width: 768px) {
 
   section header {
