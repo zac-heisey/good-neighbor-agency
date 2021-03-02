@@ -47,6 +47,7 @@
             // Remove active class for all items
             item.classList.remove('active');
 
+            // Add 'active' class to clicked menu item
             if (item === event.target) {
 
               item.classList.add('active');
@@ -66,6 +67,13 @@
 
         // Listen for pageload event
         window.addEventListener('load', function(event) {
+
+          // Set 'Home' as active menu item on pageload without a hash
+          if (!window.location.hash) {
+
+            navItems[0].classList.add('active');
+
+          }
 
           navItems.forEach(item => {
 
