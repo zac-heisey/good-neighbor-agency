@@ -311,6 +311,12 @@ section header > .lock h1 {
 
 }
 
+section .content .lock > div + div {
+
+  margin-top: 2rem;
+
+}
+
 #home header {
 
   background-color: rgba(255, 116, 115, 0.65);
@@ -342,20 +348,6 @@ section header > .lock h1 {
 }
 
 /*== Block Styles ==*/
-
-/* Section Content custom margin & lock */
-
-.content > div {
-
-  margin: 2rem 0;
-  
-}
-
-.content > div .lock {
-
-  padding: 0 2rem;
-
-}
 
 /* Image Grid block */
 
@@ -422,10 +414,9 @@ section header > .lock h1 {
 
 @media (min-width: 768px) {
 
-  .image-grid .lock {
+  .image-grid {
 
     display: flex;
-    padding: 0 2rem;
 
   }
 

@@ -17,9 +17,7 @@
 
 <div class="rich-text">
 
-  <div class="lock">
-    {{ body | markdownify | safe }}
-  </div>
+  {{ body | markdownify | safe }}
 
 </div>
 
@@ -30,22 +28,20 @@
 
 <div class="image-grid">
 
-  <div class="lock">
-    {% for image in images %}
-    <div class="container" tabindex="0">
-      <img src="{{ image.imageSrc }}" alt="{{ image.imageOverlayTitle }}">
-      {% if image.imageOverlayTitle and image.imageOverlayText %}
-      <!-- Text overlay -->
-      <div class="text-overlay">
-        <p class="sub-heading">{{ image.imageOverlayTitle }}</p>
-        <div class="wrapper">
-          {{ image.imageOverlayText }}
-        </div>
+  {% for image in images %}
+  <div class="container" tabindex="0">
+    <img src="{{ image.imageSrc }}" alt="{{ image.imageOverlayTitle }}">
+    {% if image.imageOverlayTitle and image.imageOverlayText %}
+    <!-- Text overlay -->
+    <div class="text-overlay">
+      <p class="sub-heading">{{ image.imageOverlayTitle }}</p>
+      <div class="wrapper">
+        {{ image.imageOverlayText }}
       </div>
-      {% endif %}
     </div>
-    {% endfor %}
+    {% endif %}
   </div>
+  {% endfor %}
 
 </div>
 
