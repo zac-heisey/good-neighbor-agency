@@ -343,6 +343,20 @@ section header > .lock h1 {
 
 /*== Block Styles ==*/
 
+/* Section Content custom margin & lock */
+
+.content > div {
+
+  margin: 2rem 0;
+  
+}
+
+.content > div .lock {
+
+  padding: 0 2rem;
+
+}
+
 /* Image Grid block */
 
 .image-grid .container {
