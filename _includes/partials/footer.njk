@@ -30,6 +30,58 @@
 
       }
 
+      //== Set Active Menu Item ==//
+
+      {
+
+        let navItems = Array.from(document.querySelectorAll('header#menu nav a'));
+
+        // Set active menu item
+        function setActiveMenuItem(event) {
+
+          // If click was on currently active menu item, bail
+          if (event.target.classList.contains('active')) return;
+
+          navItems.forEach(item => {
+
+            // Remove active class for all items
+            item.classList.remove('active');
+
+            if (item === event.target) {
+
+              item.classList.add('active');
+
+            }
+
+          });
+
+        }
+
+        // Listen for clicks on menu items
+        navItems.forEach(item => {
+
+          item.addEventListener('click', setActiveMenuItem, false);
+
+        });
+
+        // Listen for pageload event
+        window.addEventListener('load', function(event) {
+
+          navItems.forEach(item => {
+
+            // Set active menu item on pageload
+            if (item.getAttribute('href') === window.location.hash) {
+
+              item.classList.add('active');
+
+            }
+
+          });
+
+        }, false);
+
+      }
+
     }()); // IIFE wrapper end
 
   </script>
