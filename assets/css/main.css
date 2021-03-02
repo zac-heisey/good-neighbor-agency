@@ -127,26 +127,6 @@ html {
 
 }
 
-@media (min-width: 768px) {
-
-  html {
-
-    overflow: hidden;
-
-  }
-
-}
-
-/* Shared lock */
-.lock {
-
-  width: 100%;
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 2rem;
-
-}
-
 /* Initially load system font while custom fonts load */
 body, h1, h2, h3 {
 
@@ -195,6 +175,26 @@ p.sub-heading {
 
 }
 
+a {
+
+  color: var(--pink);
+  background-image: linear-gradient(to right, var(--yellow), var(--yellow));
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 5px;
+  padding-bottom: 5px;
+  transition: background-size 0.25s;
+
+}
+
+a:hover,
+a:focus,
+a.active {
+
+  background-size: 100% 5px;
+
+}
+
 /* Replace system font with custom fonts once loaded */
 .fonts-loaded body {
 
@@ -218,6 +218,16 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+
+}
+
+/* Shared lock */
+.lock {
+
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
 
 }
 
@@ -247,13 +257,7 @@ header#menu nav a {
   flex-direction: column;
   align-items: center;
   color: var(--purple);
-  background-image: linear-gradient(to right, var(--yellow), var(--yellow));
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 0% 5px;
   margin: 0 1rem;
-  padding-bottom: 5px;
-  transition: background-size 0.25s;
 
 }
 
@@ -275,7 +279,6 @@ header#menu nav a:focus,
 header#menu nav a.active {
 
   font-weight: 700;
-  background-size: 100% 5px;
 
 }
 
@@ -285,6 +288,9 @@ section header {
 
   display: flex;
   align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 300px;
 
 }
@@ -303,17 +309,17 @@ section header > .lock p.sub-heading {
 
 @media (min-width: 768px) {
 
-  section header {
+  section header, section .content {
 
-    height: 45vh;
-
-  }
-
-  section .content {
-
-    height: 55vh;
+    min-height: 50vh;
 
   }
+
+}
+
+section .content {
+
+  margin: 2rem 0;
 
 }
 
@@ -325,31 +331,168 @@ section .content .lock > div + div {
 
 #home header {
 
-  background-color: rgba(255, 116, 115, 0.65);
+  background-image: linear-gradient(0deg, rgba(255, 116, 115, 0.65) 0%, rgba(255, 116, 115, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_576/good-neighbor/we-all-live-here.jpg');
 
 }
 
 #about header {
 
-  background-color: rgba(255, 201, 82, 0.65);
+  background-image: linear-gradient(0deg, rgba(255, 201, 82, 0.65) 0%, rgba(255, 201, 82, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_576/good-neighbor/welcome.jpg');
 
 }
 
 #clients header {
 
-  background-color: rgba(71, 184, 224, 0.65);
+  background-image: linear-gradient(0deg, rgba(71, 184, 224, 0.65) 0%, rgba(71, 184, 224, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_576/good-neighbor/together.jpg');
 
 }
 
 #work header {
 
-  background-color: rgba(197, 233, 155, 0.65);
+  background-image: linear-gradient(0deg, rgba(197, 233, 155, 0.65) 0%, rgba(197, 233, 155, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_576/good-neighbor/believe.jpg');
 
 }
 
 #contact header {
 
-  background-color: rgba(213, 159, 255, 0.65);
+  background-image: linear-gradient(0deg, rgba(213, 159, 255, 0.65) 0%, rgba(213, 159, 255, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_576/good-neighbor/better-days-ahead.jpg');
+
+}
+
+/* Resize header background images on larger screens */
+@media (min-width: 576px) {
+
+  #home header {
+
+    background-image: linear-gradient(0deg, rgba(255, 116, 115, 0.65) 0%, rgba(255, 116, 115, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_768/good-neighbor/we-all-live-here.jpg');
+
+  }
+
+  #about header {
+
+    background-image: linear-gradient(0deg, rgba(255, 201, 82, 0.65) 0%, rgba(255, 201, 82, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_768/good-neighbor/welcome.jpg');
+
+  }
+
+  #clients header {
+
+    background-image: linear-gradient(0deg, rgba(71, 184, 224, 0.65) 0%, rgba(71, 184, 224, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_768/good-neighbor/together.jpg');
+
+  }
+
+  #work header {
+
+    background-image: linear-gradient(0deg, rgba(197, 233, 155, 0.65) 0%, rgba(197, 233, 155, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_768/good-neighbor/believe.jpg');
+
+  }
+
+  #contact header {
+
+    background-image: linear-gradient(0deg, rgba(213, 159, 255, 0.65) 0%, rgba(213, 159, 255, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_768/good-neighbor/better-days-ahead.jpg');
+
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  #home header {
+
+    background-image: linear-gradient(0deg, rgba(255, 116, 115, 0.65) 0%, rgba(255, 116, 115, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_992/good-neighbor/we-all-live-here.jpg');
+
+  }
+
+  #about header {
+
+    background-image: linear-gradient(0deg, rgba(255, 201, 82, 0.65) 0%, rgba(255, 201, 82, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_992/good-neighbor/welcome.jpg');
+
+  }
+
+  #clients header {
+
+    background-image: linear-gradient(0deg, rgba(71, 184, 224, 0.65) 0%, rgba(71, 184, 224, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_992/good-neighbor/together.jpg');
+
+  }
+
+  #work header {
+
+    background-image: linear-gradient(0deg, rgba(197, 233, 155, 0.65) 0%, rgba(197, 233, 155, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_992/good-neighbor/believe.jpg');
+
+  }
+
+  #contact header {
+
+    background-image: linear-gradient(0deg, rgba(213, 159, 255, 0.65) 0%, rgba(213, 159, 255, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_992/good-neighbor/better-days-ahead.jpg');
+
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  #home header {
+
+    background-image: linear-gradient(0deg, rgba(255, 116, 115, 0.65) 0%, rgba(255, 116, 115, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_1200/good-neighbor/we-all-live-here.jpg');
+
+  }
+
+  #about header {
+
+    background-image: linear-gradient(0deg, rgba(255, 201, 82, 0.65) 0%, rgba(255, 201, 82, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_1200/good-neighbor/welcome.jpg');
+
+  }
+
+  #clients header {
+
+    background-image: linear-gradient(0deg, rgba(71, 184, 224, 0.65) 0%, rgba(71, 184, 224, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_1200/good-neighbor/together.jpg');
+
+  }
+
+  #work header {
+
+    background-image: linear-gradient(0deg, rgba(197, 233, 155, 0.65) 0%, rgba(197, 233, 155, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_1200/good-neighbor/believe.jpg');
+
+  }
+
+  #contact header {
+
+    background-image: linear-gradient(0deg, rgba(213, 159, 255, 0.65) 0%, rgba(213, 159, 255, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/c_scale,w_1200/good-neighbor/better-days-ahead.jpg');
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  #home header {
+
+    background-image: linear-gradient(0deg, rgba(255, 116, 115, 0.65) 0%, rgba(255, 116, 115, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/good-neighbor/we-all-live-here.jpg');
+
+  }
+
+  #about header {
+
+    background-image: linear-gradient(0deg, rgba(255, 201, 82, 0.65) 0%, rgba(255, 201, 82, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/good-neighbor/welcome.jpg');
+
+  }
+
+  #clients header {
+
+    background-image: linear-gradient(0deg, rgba(71, 184, 224, 0.65) 0%, rgba(71, 184, 224, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/good-neighbor/together.jpg');
+
+  }
+
+  #work header {
+
+    background-image: linear-gradient(0deg, rgba(197, 233, 155, 0.65) 0%, rgba(197, 233, 155, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/good-neighbor/believe.jpg');
+
+  }
+
+  #contact header {
+
+    background-image: linear-gradient(0deg, rgba(213, 159, 255, 0.65) 0%, rgba(213, 159, 255, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/good-neighbor/better-days-ahead.jpg');
+
+  }
 
 }
 
@@ -360,7 +503,7 @@ section .content .lock > div + div {
 .image-grid .container {
 
   position: relative;
-  flex-grow: 1;
+  flex: 1;
   height: 275px;
   overflow: hidden;
 
@@ -380,12 +523,6 @@ section .content .lock > div + div {
 
 }
 
-.image-grid .container .text-overlay .sub-heading {
-
-  font-weight: 700;
-
-}
-
 .image-grid .container .text-overlay {
 
   position: absolute;
@@ -402,12 +539,24 @@ section .content .lock > div + div {
 
 }
 
+.image-grid .container .text-overlay .sub-heading {
+
+  font-weight: 700;
+
+}
+
 .image-grid .container .text-overlay .wrapper {
 
   opacity: 0;
   height: 0;
   transition: all 0.75s;
 
+}
+
+.image-grid .container .text-overlay .wrapper a {
+
+  color: var(--white);
+  font-weight: 700;
 }
 
 .image-grid .container:hover .text-overlay,

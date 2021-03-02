@@ -30,13 +30,15 @@
 
   {% for image in images %}
   <div class="container" tabindex="0">
-    <img src="{{ image.imageSrc }}" alt="{{ image.imageOverlayTitle }}">
+    <!-- Image Sizes include -->
+    {% include "partials/image-sizes.html" %}
+
     {% if image.imageOverlayTitle and image.imageOverlayText %}
     <!-- Text overlay -->
     <div class="text-overlay">
       <p class="sub-heading">{{ image.imageOverlayTitle }}</p>
       <div class="wrapper">
-        {{ image.imageOverlayText }}
+        {{ image.imageOverlayText | markdownify | safe }}
       </div>
     </div>
     {% endif %}
