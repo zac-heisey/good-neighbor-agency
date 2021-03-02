@@ -12,7 +12,6 @@ blocks:
     body: >-
       ## Your Digital Agency Next Door.
 
-
       We help purpose-driven brands and organizations solve problems through strategy, design, and technology. If your mission is to do good, we can help you do it better. Learn more about [who we are](/#about) and [what we do](/#work).
 
 

@@ -20,7 +20,7 @@ blocks:
           Providing FGR Fans with an Immersive Match Day Experience at the World's Greenest Football Stadium.
 
 
-          [View Project >](#)
+          [View Project >](/projects/fgr-eco-park)
         imageSrc: /good-neighbor/fgr-eco-park.png
       - imageOverlayTitle: AIMS
         imageOverlayText: >-
