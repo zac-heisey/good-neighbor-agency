@@ -3,35 +3,35 @@
   {
 
     "name": "Home",
-    "url": "#home"
+    "url": "/#home"
 
   },
 
   {
 
     "name": "About",
-    "url": "#about"
+    "url": "/#about"
 
   },
 
   {
 
     "name": "Clients",
-    "url": "#clients"
+    "url": "/#clients"
 
   },
 
   {
 
     "name": "Work",
-    "url": "#work"
+    "url": "/#work"
 
   },
 
   {
 
     "name": "Contact",
-    "url": "#contact"
+    "url": "/#contact"
 
   }
 
