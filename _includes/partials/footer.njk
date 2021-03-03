@@ -78,7 +78,7 @@
           navItems.forEach(item => {
 
             // Set active menu item on pageload
-            if (item.getAttribute('href') === window.location.hash) {
+            if (item.getAttribute('href').replace('/', '') === window.location.hash) {
 
               item.classList.add('active');
 
