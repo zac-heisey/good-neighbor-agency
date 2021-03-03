@@ -1,27 +1,18 @@
 <!-- See: https://web.dev/codelab-specifying-multiple-slot-widths/ -->
-
-{% if '/good-neighbor/' in image.imageSrc %}
-
-  <img
-    src="{{ site.cloudinary }},w_auto{{ image.imageSrc }}"
-    srcset="
-    {{ site.cloudinary }},w_576{{ image.imageSrc }} 576w,
-    {{ site.cloudinary }},w_768{{ image.imageSrc }} 768w,
-    {{ site.cloudinary }},w_992{{ image.imageSrc }} 992w,
-    {{ site.cloudinary }},w_1200{{ image.imageSrc }} 1200w
-    "
-    sizes="
-    (max-width: 768px) 100vw,
-    535px
-    "
-    alt="{{ image.imageOverlayTitle }}"
-    width="800"
-    height="450"
-    loading="lazy"
-  >
-
-{% else %}
-
-<img src="{{ image.imageSrc }}" alt="{{ image.imageOverlayTitle }}" loading="lazy">
-
-{% endif %}
+<img
+  src="{{ site.cloudinary }},w_auto/good-neighbor{{ image.imageSrc }}"
+  srcset="
+  {{ site.cloudinary }},w_576/good-neighbor{{ image.imageSrc }} 576w,
+  {{ site.cloudinary }},w_768/good-neighbor{{ image.imageSrc }} 768w,
+  {{ site.cloudinary }},w_992/good-neighbor{{ image.imageSrc }} 992w,
+  {{ site.cloudinary }},w_1200/good-neighbor{{ image.imageSrc }} 1200w
+  "
+  sizes="
+  (max-width: 768px) 100vw,
+  535px
+  "
+  alt="{{ image.imageOverlayTitle }}"
+  width="800"
+  height="450"
+  loading="lazy"
+>

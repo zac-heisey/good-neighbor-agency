@@ -21,12 +21,12 @@ blocks:
 
 
           [View Project >](/projects/fgr-eco-park)
-        imageSrc: /good-neighbor/fgr-eco-park.png
+        imageSrc: /fgr-eco-park.png
       - imageOverlayTitle: AIMS
         imageOverlayText: >-
           Helping Independent Schools in Maryland and Washington DC Through a Variety of Digital Training & Technology Workshops.
 
 
           [View Project >](#)
-        imageSrc: /good-neighbor/aims-workshop.jpg
+        imageSrc: /aims-workshop.jpg
 ---
