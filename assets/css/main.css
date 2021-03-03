@@ -506,7 +506,7 @@ section .content .lock > div + div {
 
   position: relative;
   flex: 1;
-  height: 275px;
+  height: 300px;
   overflow: hidden;
 
 }

@@ -28,5 +28,5 @@ blocks:
 
 
           [View Project >](#)
-        imageSrc: https://cdn.ymaws.com/www.aimsmddc.org/resource/resmgr/homepage/IMG_2230.JPG
+        imageSrc: /good-neighbor/aims-workshop.jpg
 ---
