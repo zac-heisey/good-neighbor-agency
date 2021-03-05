@@ -1,11 +1,11 @@
 <!-- Section Header -->
-{% macro sectionHeader(main, sub) %}
+{% macro sectionHeader(mainHeading, subHeading, bgImage) %}
 
-<header>
+<header{% if bgImage %} style="background-image: linear-gradient(0deg, rgba(255, 201, 82, 0.65) 0%, rgba(255, 255, 255, 0.65) 100%), url('{{ site.cloudinary }},w_auto/good-neighbor{{ bgImage }}');"{% endif %}>
 
   <div class="lock">
-    <h1>{{ main | safe }}</h1>
-    <p class="sub-heading">{{ sub | safe }}</p>
+    <h1>{{ mainHeading | safe }}</h1>
+    <p class="sub-heading">{{ subHeading | safe }}</p>
   </div>
 
 </header>

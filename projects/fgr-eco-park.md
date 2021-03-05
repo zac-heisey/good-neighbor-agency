@@ -5,7 +5,7 @@ description: Forest Green Rovers FC Project
 header:
   mainHeading: FGR Eco Park<br>AR Prototype
   subHeading: Experience Match Day at the World's Greenest Football Stadium
-  bgImage:
+  bgImage: /fgr-eco-park.png
 blocks:
   - type: richText
     body: >-
