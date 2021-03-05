@@ -21,6 +21,44 @@ collections:
       - { label: "Image", name: "image", widget: "image", hint: "Ideal Width: 1208 pixels", required: false }
       - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: "[post]" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Projects"
+    name: "projects"
+    description: "Case studies of previous projects"
+    folder: "projects"
+    create: true
+    slug: "{{ slug }}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/project.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "hidden", default: false }
+      - label: "Header"
+        name: "header"
+        widget: "object"
+        fields:
+          - { label: "Main Heading", name: "mainHeading", widget: "markdown" }
+          - { label: "Sub-Heading", name: "subHeading", widget: "text" }
+          - { label: "Background Image", name: "bgImage", widget: "image", required: false }
+      - label: "Blocks"
+        name: "blocks"
+        widget: "list"
+        types:
+          - label: "Rich Text"
+            name: "richText"
+            widget: "object"
+            fields:
+              - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Image Grid"
+            name: "imageGrid"
+            widget: "object"
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "list"
+                fields:
+                  - { label: "Image Overlay Title", name: "imageOverlayTitle", widget: "string", required: false }
+                  - { label: "Image Overlay Text", name: "imageOverlayText", widget: "markdown", required: false }
+                  - { label: "Choose Image", name: "imageSrc", widget: "image", required: false }
   - label: "Sections"
     name: "sections"
     description: "The main content sections of the website accessible via the navigation menu"
