@@ -594,3 +594,9 @@ section .content .lock > div + div {
 
 
 /* Rich Text block */
+
+.rich-text img {
+
+  margin: 2rem auto;
+
+}
