@@ -227,9 +227,19 @@ body {
 .lock {
 
   width: 100%;
-  max-width: 1150px;
+  max-width: 1050px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem;
+
+}
+
+@media (min-width: 576px) {
+
+  .lock {
+
+    padding: 1rem 2rem;
+
+  }
 
 }
 
@@ -239,12 +249,6 @@ header#menu {
   position: fixed;
   width: 100%;
   z-index: 10;
-
-}
-
-header#menu .lock {
-
-  padding: 1rem 2rem;
 
 }
 
@@ -322,7 +326,7 @@ section header > .lock p.sub-heading {
 
 section .content {
 
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 
 }
 
@@ -587,3 +591,6 @@ section .content .lock > div + div {
   }
 
 }
+
+
+/* Rich Text block */
