@@ -17,9 +17,7 @@
 
 <div class="rich-text">
 
-  {{ body | markdownify | safe }}
-
-  {# replace( r/(src="(.*?)")/ , "src='https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto,w_auto/good-neighbor$2'" )  #}
+  {{ body | markdownify | replace( r/(src="(.*?)")/g , "src='https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto,w_auto/good-neighbor$2'" ) | safe }}
 
 </div>
 
