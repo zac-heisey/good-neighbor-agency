@@ -59,26 +59,6 @@ collections:
                   - { label: "Image Overlay Title", name: "imageOverlayTitle", widget: "string", required: false }
                   - { label: "Image Overlay Text", name: "imageOverlayText", widget: "markdown", required: false }
                   - { label: "Choose Image", name: "imageSrc", widget: "image", required: false }
-          - label: "Carousel"
-            name: "carousel"
-            widget: "object"
-            fields:
-              - label: "Items"
-                name: "items"
-                widget: "list"
-                types:
-                  - label: "Text"
-                    name: "text"
-                    widget: "object"
-                    fields:
-                      - { label: "Body", name: "body", widget: "markdown" }
-                  - label: "Image"
-                    name: "image"
-                    widget: "object"
-                    fields:
-                      - { label: "Image Overlay Title", name: "imageOverlayTitle", widget: "string", required: false }
-                      - { label: "Image Overlay Text", name: "imageOverlayText", widget: "markdown", required: false }
-                      - { label: "Choose Image", name: "imageSrc", widget: "image", required: false }
   - label: "Sections"
     name: "sections"
     description: "The main content sections of the website accessible via the navigation menu"
@@ -118,3 +98,23 @@ collections:
                   - { label: "Image Overlay Title", name: "imageOverlayTitle", widget: "string", required: false }
                   - { label: "Image Overlay Text", name: "imageOverlayText", widget: "markdown", required: false }
                   - { label: "Choose Image", name: "imageSrc", widget: "image", required: false }
+          - label: "Carousel"
+            name: "carousel"
+            widget: "object"
+            fields:
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                types:
+                  - label: "Text"
+                    name: "text"
+                    widget: "object"
+                    fields:
+                      - { label: "Body", name: "body", widget: "markdown" }
+                  - label: "Image"
+                    name: "image"
+                    widget: "object"
+                    fields:
+                      - { label: "Image Overlay Title", name: "imageOverlayTitle", widget: "string", required: false }
+                      - { label: "Image Overlay Text", name: "imageOverlayText", widget: "markdown", required: false }
+                      - { label: "Choose Image", name: "imageSrc", widget: "image", required: false }
