@@ -48,3 +48,59 @@
 </div>
 
 {% endmacro %}
+
+<!-- Carousel block -->
+{% macro carousel(items) %}
+
+<div class="carousel">
+
+  <div class="items">
+
+    {% for item in items %}
+    <div class="item">
+
+      {% if item.type === 'text' %}
+      <!-- Text item -->
+      <div class="text">
+
+        {{ item.body | markdownify | safe }}
+
+      </div>
+      {% endif %}
+
+      {% if item.type === 'image' %}
+      <!-- Image item -->
+      <div class="image">
+        <!-- Image Sizes include -->
+        {% include "partials/image-sizes.html" %}
+
+        {% if image.imageOverlayTitle and image.imageOverlayText %}
+        <!-- Text overlay -->
+        <div class="text-overlay">
+          <p class="sub-heading">{{ image.imageOverlayTitle }}</p>
+          <div class="wrapper">
+            {{ image.imageOverlayText | markdownify | safe }}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+      {% endif %}
+
+    </div>
+    {% endfor %}
+
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+
+    <button class="icon-left-arrow" type="button" name="backward" aria-label="Left Arrow"></button>
+
+    <button class="icon-right-arrow" type="button" name="forward" aria-label="Right Arrow"></button>
+
+  </div>
+
+</div>
+
+{% endmacro %}

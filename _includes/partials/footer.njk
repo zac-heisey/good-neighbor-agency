@@ -90,6 +90,82 @@
 
       }
 
+      //== Carousel ==//
+
+      {
+
+        let carousel = document.querySelector('.carousel');
+
+        let items = carousel.querySelector('.items');
+
+        let backwardButton = carousel.querySelector('[name="backward"]');
+
+        let forwardButton = carousel.querySelector('[name="forward"]');
+
+        let index = 0;
+
+        function backward() {
+
+          if (items.scrollLeft === 0) {
+
+            items.scrollLeft += items.children[0].offsetWidth;
+
+            items.prepend(items.removeChild(items.children[items.children.length - 1]));
+
+            items.children[0].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+
+            index = 0;
+
+          }
+
+          else {
+
+            index = Math.round(items.scrollLeft / items.children[0].offsetWidth) - 1;
+
+            items.children[index].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+
+          }
+
+        }
+
+        function forward() {
+
+          if (Math.round(items.scrollLeft) === items.scrollWidth -items.clientWidth) {
+
+            items.scrollLeft -= items.children[0].offsetWidth;
+
+            items.append(items.removeChild(items.children[0]));
+
+            index = items.children.length - 1;
+
+            items.children[index].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+
+          }
+
+          else {
+
+            index = Math.round(items.scrollLeft / items.children[0].offsetWidth) + 1;
+
+            items.children[index].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+
+          }
+
+        }
+
+        function resize() {
+
+          items.scrollLeft = index * items.children[0].offsetWidth;
+
+        }
+
+        window.addEventListener('resize', resize);
+
+        backwardButton.addEventListener('click', backward);
+
+        forwardButton.addEventListener('click', forward);
+
+      };
+
     }()); // IIFE wrapper end
 
   </script>

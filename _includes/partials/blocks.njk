@@ -11,3 +11,10 @@
   {{ macro.imageGrid(block.images) }}
 
 {% endif %}
+
+{% if block.type == 'carousel' %}
+
+  {# Carousel block #}
+  {{ macro.carousel(block.items) }}
+
+{% endif %}

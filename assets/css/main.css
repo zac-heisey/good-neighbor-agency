@@ -60,6 +60,7 @@
 
 /* Universal box sizing > includes padding and border,
 but NOT margin, in total box size */
+
 *, *:before, *:after {
 
   box-sizing: border-box;
@@ -67,6 +68,7 @@ but NOT margin, in total box size */
 }
 
 /* Removes margin & padding from all browsers */
+
 html, body, div, ul, li,
 h1, h2, h3, h4, h5, h6 {
 
@@ -76,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Removes underline from all link states */
+
 a:link, a:visited, a:hover, a:active {
 
   text-decoration: none;
@@ -93,6 +96,7 @@ img {
 }
 
 /* Screen readers only */
+
 .sr-only, .sr-only-focusable {
 
   overflow: hidden;
@@ -121,6 +125,7 @@ img {
 /*== Common Styles ==*/
 
 /* Set default scroll behavior */
+
 html {
 
   scroll-behavior: smooth;
@@ -128,6 +133,7 @@ html {
 }
 
 /* Initially load system font while custom fonts load */
+
 body, h1, h2, h3 {
 
   color: var(--purple);
@@ -198,6 +204,7 @@ a.active {
 }
 
 /* Replace system font with custom fonts once loaded */
+
 .fonts-loaded body {
 
   font-family: var(--body-font);
@@ -213,6 +220,7 @@ a.active {
 }
 
 /* Set core body defaults */
+
 body {
 
   min-height: 100vh;
@@ -224,6 +232,7 @@ body {
 }
 
 /* Shared lock */
+
 .lock {
 
   width: 100%;
@@ -243,7 +252,47 @@ body {
 
 }
 
+/* Icon styles */
+
+button[class*=icon-] {
+
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+[class*=icon-]::before {
+
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+.icon-left-arrow::before {
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 511.641 511.641'%3e%3cpath fill='%2334314c' d='m148.32 255.76 237.76-237.76c4.053-4.267 3.947-10.987-.213-15.04-4.16-3.947-10.667-3.947-14.827 0l-245.333 245.333c-4.16 4.16-4.16 10.88 0 15.04l245.333 245.334c4.267 4.053 10.987 3.947 15.04-.213 3.947-4.16 3.947-10.667 0-14.827z'/%3e%3c/svg%3e");
+
+}
+
+.icon-right-arrow::before {
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 511.949 511.949'%3e%3cpath fill='%2334314c' d='m386.235 248.308-245.333-245.333c-4.267-4.053-10.987-3.947-15.04.213-3.947 4.16-3.947 10.667 0 14.827l237.76 237.76-237.76 237.867c-4.267 4.053-4.373 10.88-.213 15.04 4.053 4.267 10.88 4.373 15.04.213.107-.107.213-.213.213-.213l245.333-245.333c4.16-4.161 4.16-10.881 0-15.041z'/%3e%3c/svg%3e");
+
+}
+
 /* Header menu styles */
+
 header#menu {
 
   position: fixed;
@@ -367,6 +416,7 @@ section .content .lock > div + div {
 }
 
 /* Resize header background images on larger screens */
+
 @media (min-width: 576px) {
 
   #home header {
@@ -593,5 +643,21 @@ section .content .lock > div + div {
 .rich-text img {
 
   margin: 2rem auto;
+
+}
+
+/* Carousel block */
+
+.carousel .items {
+
+  display: flex;
+  overflow: hidden;
+
+}
+
+.carousel .item {
+
+  min-width: 100%;
+  padding: 0 1rem;
 
 }

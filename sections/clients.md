@@ -20,8 +20,6 @@ blocks:
           of the way. I would love to work with him again."
 
 
-
-
           **Carol W.**, Director of Communications, Advocates for Children and Youth
       - type: text
         body: >-
@@ -30,16 +28,12 @@ blocks:
           site project. Thanks, Zac!"
 
 
-
-
           **Joseph V.**, Chief Executive, The Artist Outreach
       - type: text
         body: >-
           "Zac was very helpful and gave me great insight on our company's
           website! I appreciated his attention to detail and his interest in the
           company."
-
-
 
 
           **Joi J.**, Marketing Manager, The Georgia Ballet
@@ -51,15 +45,11 @@ blocks:
           for me and my rudimentary web development knowledge."
 
 
-
-
           **Lauren R.**, Volunteer Manager, Rebuilding Together Peninsula
       - type: text
         body: >-
           "Zac was incredible to work with! He is super knowledgable about
           Google Analytics and digital marketing in general."
-
-
 
 
           **Kate M.**, COO, Waterfront Alliance
