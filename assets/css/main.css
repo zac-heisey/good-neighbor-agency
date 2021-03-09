@@ -511,14 +511,15 @@ section .content .lock > div + div {
 
   position: relative;
   flex: 1;
+  min-width: 30%;
   height: 300px;
   overflow: hidden;
 
 }
 
-.image-grid .container:not(:last-child) {
+.image-grid .container {
 
-  margin: 0 0 1rem 0;
+  margin: 0.5rem;
 
 }
 
@@ -581,17 +582,11 @@ section .content .lock > div + div {
   .image-grid {
 
     display: flex;
-
-  }
-
-  .image-grid .container:not(:last-child) {
-
-    margin: 0 1rem 0 0;
+    flex-wrap: wrap;
 
   }
 
 }
-
 
 /* Rich Text block */
 
