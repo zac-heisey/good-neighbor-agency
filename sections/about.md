@@ -12,7 +12,7 @@ blocks:
   - type: richText
     body: "## We are Good Neighbor."
   - type: imageGrid
-    image:
+    images:
       - imageOverlayTitle: Zac Heisey · Partner
         imageOverlayText: Zac leads the creative and digital strategy at Good Neighbor
           Agency. He's been helping businesses and organizations build and grow
