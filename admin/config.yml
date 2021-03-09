@@ -66,12 +66,9 @@ collections:
               - label: "Items"
                 name: "items"
                 widget: "list"
+                field:
+                  - { label: "Max Items Displayed", name: "max-items", widget: "select", options: ["1", "2", "3"], required: false }
                 types:
-                  - label: "Max Items Displayed"
-                    name: "max-items"
-                    width: "object"
-                    fields:
-                      - { label: "Diplay Items", name: "display-items", widget: "select", options: [1, 2, 3], required: false }
                   - label: "Text"
                     name: "text"
                     widget: "object"
