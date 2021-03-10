@@ -12,6 +12,13 @@
 
 {% endif %}
 
+{% if block.type == 'logoGrid' %}
+
+  {# Logo Grid block #}
+  {{ macro.logoGrid(block.logos) }}
+
+{% endif %}
+
 {% if block.type == 'carousel' %}
 
   {# Carousel block #}

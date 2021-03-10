@@ -1,4 +1,5 @@
 <!-- Section Header -->
+
 {% macro sectionHeader(mainHeading, subHeading, bgImage) %}
 
 <header{% if bgImage %} style="background-image: linear-gradient(0deg, rgba(255, 201, 82, 0.65) 0%, rgba(255, 255, 255, 0.65) 100%), url('{{ site.cloudinary }},w_auto/good-neighbor{{ bgImage }}');"{% endif %}>
@@ -13,6 +14,7 @@
 {% endmacro %}
 
 <!-- Rich Text block -->
+
 {% macro richText(body) %}
 
 <div class="rich-text">
@@ -24,6 +26,7 @@
 {% endmacro %}
 
 <!-- Image Grid block -->
+
 {% macro imageGrid(images) %}
 
 <div class="image-grid">
@@ -49,7 +52,24 @@
 
 {% endmacro %}
 
+<!-- Logo Grid block -->
+
+{% macro logoGrid(logos) %}
+
+<div class="logo-grid">
+
+  {% for logo in logos %}
+  <div class="container">
+    <img src="{{ site.cloudinary }},w_auto/good-neighbor{{ logo.imageSrc }}" alt="{{ logo.imageAltText }}">
+  </div>
+  {% endfor %}
+
+</div>
+
+{% endmacro %}
+
 <!-- Carousel block -->
+
 {% macro carousel(items) %}
 
 <div class="carousel">

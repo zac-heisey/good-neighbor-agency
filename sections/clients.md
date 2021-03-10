@@ -53,4 +53,14 @@ blocks:
 
 
           **Kate M.**, COO, Waterfront Alliance
+  - type: logoGrid
+    logos:
+      - imageAltText: Ulman Cancer Foundation logo
+        imageSrc: /ulman-logo.png
+      - imageAltText: Betamore logo
+        imageSrc: /betamore-logo.png
+      - imageAltText: Business Volunteers Maryland logo
+        imageSrc: /bvm-logo.png
+      - imageAltText: Techies 4 Good logo
+        imageSrc: /t4g-logo.jpg
 ---

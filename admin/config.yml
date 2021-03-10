@@ -102,8 +102,8 @@ collections:
             name: "logoGrid"
             widget: "object"
             fields:
-              - label: "Image"
-                name: "image"
+              - label: "Logo"
+                name: "logo"
                 widget: "list"
                 fields:
                   - { label: "Image Alt Text", name: "imageAltText", widget: "string", required: false }

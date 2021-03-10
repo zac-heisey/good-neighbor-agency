@@ -633,6 +633,47 @@ section .content .lock > div + div {
 
 }
 
+/* Logo Grid block */
+
+.logo-grid {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.logo-grid .container {
+
+  width: 50%;
+  padding: 1rem;
+
+}
+
+@media (min-width: 576px) {
+
+  .logo-grid .container {
+
+    width: 25%;
+    max-width: 225px;
+
+  }
+
+}
+
+.logo-grid img {
+
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+
+}
+
+.logo-grid img:hover {
+
+  filter: grayscale(0%);
+
+}
+
 /* Rich Text block */
 
 .rich-text img {
