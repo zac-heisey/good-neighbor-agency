@@ -98,6 +98,16 @@ collections:
                   - { label: "Image Overlay Title", name: "imageOverlayTitle", widget: "string", required: false }
                   - { label: "Image Overlay Text", name: "imageOverlayText", widget: "markdown", required: false }
                   - { label: "Choose Image", name: "imageSrc", widget: "image", required: false }
+          - label: "Logo Grid"
+            name: "logoGrid"
+            widget: "object"
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "list"
+                fields:
+                  - { label: "Image Alt Text", name: "imageAltText", widget: "string", required: false }
+                  - { label: "Choose Image", name: "imageSrc", widget: "image", required: false }
           - label: "Carousel"
             name: "carousel"
             widget: "object"
