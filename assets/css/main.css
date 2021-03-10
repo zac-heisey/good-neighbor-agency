@@ -648,6 +648,12 @@ section .content .lock > div + div {
 
 /* Carousel block */
 
+.carousel {
+
+  position: relative;
+
+}
+
 .carousel .items {
 
   display: flex;
@@ -659,5 +665,25 @@ section .content .lock > div + div {
 
   min-width: 100%;
   padding: 0 1rem;
+
+}
+
+.carousel .controls {
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+@media (min-width: 1150px) {
+
+  .carousel .controls {
+
+    position: absolute;
+    top: 30%;
+    left: -64px;
+    width: 1114px;
+
+  }
 
 }
