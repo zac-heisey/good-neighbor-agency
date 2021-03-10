@@ -91,8 +91,8 @@ collections:
             name: "imageGrid"
             widget: "object"
             fields:
-              - label: "Image"
-                name: "image"
+              - label: "Images"
+                name: "images"
                 widget: "list"
                 fields:
                   - { label: "Image Overlay Title", name: "imageOverlayTitle", widget: "string", required: false }
@@ -102,8 +102,8 @@ collections:
             name: "logoGrid"
             widget: "object"
             fields:
-              - label: "Logo"
-                name: "logo"
+              - label: "Logos"
+                name: "logos"
                 widget: "list"
                 fields:
                   - { label: "Image Alt Text", name: "imageAltText", widget: "string", required: false }
