@@ -57,11 +57,11 @@
   <div class="items">
 
     {% for item in items %}
-    <div class="item">
+    <div class="item" data-type="{{ item.type }}">
 
       {% if item.type === 'text' %}
       <!-- Text item -->
-      <div class="text">
+      <div class="rich-text">
 
         {{ item.body | markdownify | safe }}
 
@@ -71,18 +71,36 @@
       {% if item.type === 'image' %}
       <!-- Image item -->
       <div class="image">
-        <!-- Image Sizes include -->
-        {% include "partials/image-sizes.html" %}
 
-        {% if image.imageOverlayTitle and image.imageOverlayText %}
+        <!-- Image Sizes include -->
+        <img
+          src="{{ site.cloudinary }},w_auto/good-neighbor{{ item.imageSrc }}"
+          srcset="
+          {{ site.cloudinary }},w_576/good-neighbor{{ item.imageSrc }} 576w,
+          {{ site.cloudinary }},w_768/good-neighbor{{ item.imageSrc }} 768w,
+          {{ site.cloudinary }},w_992/good-neighbor{{ item.imageSrc }} 992w,
+          {{ site.cloudinary }},w_1200/good-neighbor{{ item.imageSrc }} 1200w
+          "
+          sizes="
+          (max-width: 768px) 100vw,
+          535px
+          "
+          alt="{{ item.imageOverlayTitle }}"
+          width="800"
+          height="450"
+          loading="lazy"
+        >
+
+        {% if item.imageOverlayTitle and item.imageOverlayText %}
         <!-- Text overlay -->
         <div class="text-overlay">
-          <p class="sub-heading">{{ image.imageOverlayTitle }}</p>
+          <p class="sub-heading">{{ item.imageOverlayTitle }}</p>
           <div class="wrapper">
-            {{ image.imageOverlayText | markdownify | safe }}
+            {{ item.imageOverlayText | markdownify | safe }}
           </div>
         </div>
         {% endif %}
+
       </div>
 
       {% endif %}

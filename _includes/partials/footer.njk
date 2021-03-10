@@ -1,10 +1,29 @@
 <footer>
 
+  <div class="lock">
+
+    <!-- Copyright Info -->
+    <p>© <span id="date"></span> Good Neighbor. All right reserved.</p>
+
+    <p>Made with &hearts; Baltimore & San Diego</p>
+
+  </div>
+
   <!-- Inline Scripts -->
   <script type="text/javascript">
 
     // IIFE wrapper start
     (function() {
+
+      //== Update Date in Footer ==//
+
+      {
+
+        let footerDate = document.getElementById('date');
+        let currentYear = new Date().getFullYear();
+        footerDate.innerText = currentYear;
+
+      }
 
       //== Load Fonts (prevent FOIT) ==//
 
@@ -94,77 +113,82 @@
 
       {
 
-        let carousel = document.querySelector('.carousel');
+        // Grab all carousels on page
+        let carousels = Array.from(document.querySelectorAll('.carousel'));
 
-        let items = carousel.querySelector('.items');
+        carousels.forEach(carousel => {
 
-        let backwardButton = carousel.querySelector('[name="backward"]');
+          let items = carousel.querySelector('.items');
 
-        let forwardButton = carousel.querySelector('[name="forward"]');
+          let backwardButton = carousel.querySelector('[name="backward"]');
 
-        let index = 0;
+          let forwardButton = carousel.querySelector('[name="forward"]');
 
-        function backward() {
+          let index = 0;
 
-          if (items.scrollLeft === 0) {
+          function backward() {
 
-            items.scrollLeft += items.children[0].offsetWidth;
+            if (items.scrollLeft === 0) {
 
-            items.prepend(items.removeChild(items.children[items.children.length - 1]));
+              items.scrollLeft += items.children[0].offsetWidth;
 
-            items.children[0].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+              items.prepend(items.removeChild(items.children[items.children.length - 1]));
 
-            index = 0;
+              items.children[0].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
 
-          }
+              index = 0;
 
-          else {
+            }
 
-            index = Math.round(items.scrollLeft / items.children[0].offsetWidth) - 1;
+            else {
 
-            items.children[index].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+              index = Math.round(items.scrollLeft / items.children[0].offsetWidth) - 1;
 
-          }
+              items.children[index].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
 
-        }
-
-        function forward() {
-
-          if (Math.round(items.scrollLeft) === items.scrollWidth -items.clientWidth) {
-
-            items.scrollLeft -= items.children[0].offsetWidth;
-
-            items.append(items.removeChild(items.children[0]));
-
-            index = items.children.length - 1;
-
-            items.children[index].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+            }
 
           }
 
-          else {
+          function forward() {
 
-            index = Math.round(items.scrollLeft / items.children[0].offsetWidth) + 1;
+            if (Math.round(items.scrollLeft) === items.scrollWidth -items.clientWidth) {
 
-            items.children[index].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+              items.scrollLeft -= items.children[0].offsetWidth;
+
+              items.append(items.removeChild(items.children[0]));
+
+              index = items.children.length - 1;
+
+              items.children[index].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+
+            }
+
+            else {
+
+              index = Math.round(items.scrollLeft / items.children[0].offsetWidth) + 1;
+
+              items.children[index].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+
+            }
 
           }
 
-        }
+          function resize() {
 
-        function resize() {
+            items.scrollLeft = index * items.children[0].offsetWidth;
 
-          items.scrollLeft = index * items.children[0].offsetWidth;
+          }
 
-        }
+          window.addEventListener('resize', resize);
 
-        window.addEventListener('resize', resize);
+          backwardButton.addEventListener('click', backward);
 
-        backwardButton.addEventListener('click', backward);
+          forwardButton.addEventListener('click', forward);
 
-        forwardButton.addEventListener('click', forward);
+        });
 
-      };
+      }
 
     }()); // IIFE wrapper end
 
