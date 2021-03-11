@@ -171,7 +171,7 @@ h3 {
 
 }
 
-@media (min-height: 576px) {
+@media (min-width: 576px) {
 
   /* Temporary to clamp() not working on smaller screens */
 
