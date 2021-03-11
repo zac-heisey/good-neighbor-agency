@@ -129,6 +129,8 @@ img {
 html {
 
   scroll-behavior: smooth;
+  /* Fix re-sizing issue on Safari */
+  -webkit-text-size-adjust: 100%;
 
 }
 
@@ -138,7 +140,6 @@ body, h1, h2, h3 {
 
   color: var(--purple);
   font-family: var(--system-font);
-  min-height: 0vw; /* Fix re-sizing issue on Safari */
 
 }
 
