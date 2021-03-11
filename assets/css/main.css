@@ -342,6 +342,7 @@ header#menu nav a.active {
 
 header#menu nav.slideout-menu {
 
+  visibility: hidden;
   position: absolute;
   top: 0;
   right: -200px;
@@ -351,7 +352,7 @@ header#menu nav.slideout-menu {
   padding: 3rem;
   width: 200px;
   height: 100vh;
-  transition: right .4s;
+  transition: .4s;
 
 }
 
@@ -363,6 +364,7 @@ header#menu nav.slideout-menu a {
 
 header#menu nav.slideout-menu.is-open {
 
+  visibility: visible;
   right: 0;
   box-shadow: 0 0 10px var(--purple);
 

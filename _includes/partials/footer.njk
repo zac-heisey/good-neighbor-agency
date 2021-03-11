@@ -57,7 +57,7 @@
         let smallScreen = window.matchMedia('(max-width: 576px)');
         let slideoutToggle = document.querySelector('.slideout-toggle');
 
-        function toggleMenuType(event) {
+        function toggleSlideoutMenu(event) {
 
           if (smallScreen.matches) {
 
@@ -74,30 +74,27 @@
         }
 
         // Listen for resize events
-        window.addEventListener('resize', toggleMenuType, true);
+        window.addEventListener('resize', toggleSlideoutMenu, true);
 
         // Listen for pageload events
-        window.addEventListener('load', toggleMenuType, false);
+        window.addEventListener('load', toggleSlideoutMenu, false);
 
-        // Listen for clicks on slideout toggle buttons
-        document.addEventListener('click', function(event) {
+        // Listen for clicks on slideout toggle button
+        slideoutToggle.addEventListener('click', function(event) {
 
-          if (nav.matches(':focus-within')) {
+          // Toggle slideout menu
+          nav.classList.toggle('is-open');
 
-            console.log('Nav has focus');
-          }
+        }, false);
 
-          if (nav.classList.contains('is-open') && !nav.matches(':focus-within')) {
+        // Listen for keydown events
+        document.addEventListener('keydown', function(event) {
+
+          // If escape key is pressed when slideout menu is open
+          if (event.key === 'Escape' && nav.classList.contains('is-open')) {
 
             // Close slideout menu
             nav.classList.remove('is-open');
-
-          }
-
-          if (event.target === slideoutToggle) {
-
-            // Toggle slideout menu
-            nav.classList.toggle('is-open');
 
           }
 
@@ -175,11 +172,8 @@
         carousels.forEach(carousel => {
 
           let items = carousel.querySelector('.items');
-
           let backwardButton = carousel.querySelector('[name="backward"]');
-
           let forwardButton = carousel.querySelector('[name="forward"]');
-
           let index = 0;
 
           function backward() {
