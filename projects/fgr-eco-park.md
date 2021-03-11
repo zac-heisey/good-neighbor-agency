@@ -1,7 +1,7 @@
 ---
 layout: layouts/project.njk
 title: Forest Green Rovers Eco Park
-description: Forest Green Rovers FC Project
+description: Experience match day at FGR's Eco Park - the world's greenest football stadium. View this and other projects from Good Neighbor Agency.
 header:
   mainHeading: FGR Eco Park<br>AR Prototype
   subHeading: Experience Match Day at the World's Greenest Football Stadium
