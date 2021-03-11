@@ -49,6 +49,62 @@
 
       }
 
+      //== Mobile Slideout Menu ==//
+
+      {
+
+        let nav = document.querySelector('header#menu nav');
+        let smallScreen = window.matchMedia('(max-width: 576px)');
+        let slideoutToggle = document.querySelector('.slideout-toggle');
+
+        function toggleMenuType(event) {
+
+          if (smallScreen.matches) {
+
+            nav.classList.add('slideout-menu');
+
+          }
+
+          else {
+
+            nav.classList.remove('slideout-menu');
+
+          }
+
+        }
+
+        // Listen for resize events
+        window.addEventListener('resize', toggleMenuType, true);
+
+        // Listen for pageload events
+        window.addEventListener('load', toggleMenuType, false);
+
+        // Listen for clicks on slideout toggle buttons
+        document.addEventListener('click', function(event) {
+
+          if (nav.matches(':focus-within')) {
+
+            console.log('Nav has focus');
+          }
+
+          if (nav.classList.contains('is-open') && !nav.matches(':focus-within')) {
+
+            // Close slideout menu
+            nav.classList.remove('is-open');
+
+          }
+
+          if (event.target === slideoutToggle) {
+
+            // Toggle slideout menu
+            nav.classList.toggle('is-open');
+
+          }
+
+        }, false);
+
+      }
+
       //== Set Active Menu Item ==//
 
       {

@@ -338,6 +338,74 @@ header#menu nav a.active {
 
 }
 
+/* Mobile slideout menu styles */
+
+header#menu nav.slideout-menu {
+
+  position: absolute;
+  top: 0;
+  right: -200px;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 3rem;
+  width: 200px;
+  height: 100vh;
+  transition: right .4s;
+
+}
+
+header#menu nav.slideout-menu a {
+
+  margin: 1rem auto 1rem 0;
+
+}
+
+header#menu nav.slideout-menu.is-open {
+
+  right: 0;
+  box-shadow: 0 0 10px var(--purple);
+
+}
+
+header#menu button.slideout-toggle {
+
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  display: inline-block;
+  width: 3rem;
+  z-index: 10;
+  cursor: pointer;
+
+}
+
+header#menu button.slideout-toggle span {
+
+  display: block;
+  background-color: var(--purple);
+  height: 5px;
+  width: 100%;
+  margin: 3px 0;
+  pointer-events: none;
+
+}
+
+@media (min-width: 576px) {
+
+  header#menu button.slideout-toggle {
+
+    display: none;
+
+  }
+
+}
+
 /*== Section Styles ==*/
 
 section header {

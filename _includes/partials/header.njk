@@ -2,15 +2,20 @@
 
   <div class="lock">
 
-      <nav>
+    <!-- Mobile Slideout Toggle -->
+    <button class="slideout-toggle" id="menu-icon" aria-controls="main-nav">
+      <span class="sr-only">Menu</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-        {% for link in nav %}
-
-          <a href="{{ link.url }}" data-text="{{ link.name }}">{{ link.name }}</a>{% if not loop.last %} · {% endif %}
-
-        {% endfor %}
-
-      </nav>
+    <nav id="main-nav" aria-labelledby="menu-icon">
+      <span class="sr-only">Navigation Items</span>
+      {% for link in nav %}
+      <a href="{{ link.url }}" data-text="{{ link.name }}">{{ link.name }}</a>
+      {% endfor %}
+    </nav>
 
   </div>
 
