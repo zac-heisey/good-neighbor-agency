@@ -1,6 +1,5 @@
 ---
 title: Contact
-description: Contact Description
 order: 5
 permalink: false
 header:

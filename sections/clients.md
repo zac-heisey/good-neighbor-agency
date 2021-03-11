@@ -1,6 +1,5 @@
 ---
 title: Clients
-description: Clients Description
 order: 3
 permalink: false
 header:

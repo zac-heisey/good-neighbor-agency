@@ -1,6 +1,5 @@
 ---
 title: Work
-description: Work Description
 order: 4
 permalink: false
 header:

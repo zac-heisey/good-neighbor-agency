@@ -1,6 +1,5 @@
 ---
 title: Home
-description: Home Description
 order: 1
 permalink: false
 header:
