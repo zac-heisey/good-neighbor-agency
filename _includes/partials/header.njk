@@ -2,6 +2,14 @@
 
   <div class="lock">
 
+    <!-- Standard Menu -->
+    <nav class="standard-menu">
+      <span class="sr-only">Navigation Items</span>
+      {% for link in nav %}
+      <a href="{{ link.url }}" data-text="{{ link.name }}">{{ link.name }}</a>
+      {% endfor %}
+    </nav>
+
     <!-- Mobile Slideout Toggle -->
     <button class="slideout-toggle" id="menu-icon" aria-controls="main-nav">
       <span class="sr-only">Menu</span>
@@ -10,7 +18,8 @@
       <span></span>
     </button>
 
-    <nav id="main-nav" aria-labelledby="menu-icon">
+    <!-- Mobile Slideout Menu -->
+    <nav id="main-nav" aria-labelledby="menu-icon" class="slideout-menu standard-menu">
       <span class="sr-only">Navigation Items</span>
       {% for link in nav %}
       <a href="{{ link.url }}" data-text="{{ link.name }}">{{ link.name }}</a>

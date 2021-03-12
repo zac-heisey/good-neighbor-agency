@@ -325,8 +325,9 @@ header#menu {
 
 }
 
-header#menu nav {
+header#menu nav.standard-menu {
 
+  display: none;
   text-align: right;
 
 }
@@ -424,9 +425,16 @@ header#menu button.slideout-toggle span {
 
 @media (min-width: 576px) {
 
+  header#menu nav.slideout-menu,
   header#menu button.slideout-toggle {
 
     display: none;
+
+  }
+
+  header#menu nav.standard-menu {
+
+    display: block;
 
   }
 
