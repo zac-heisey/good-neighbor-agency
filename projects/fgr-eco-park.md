@@ -25,7 +25,7 @@ blocks:
       Delays and setbacks in the approval process for Eco Park have led to waning enthusiasm for the project among supports and the local community, which has been compounded by the halting of matches due to COVID-19.
 
 
-      FGR is looking for way to revitalize excitement and provide a useful reference guide for the new stadium in order to build support among fans and the local community ahead of an anticipated 2022 opening of Eco Park.
+      FGR is looking for ways to revitalize excitement and provide a useful reference guide for the new stadium in order to build support among fans and the local community ahead of an anticipated 2022 opening of Eco Park.
 
 
       ![Mood Board for Forest Green Rovers FC](/fgr-mood-board.png)

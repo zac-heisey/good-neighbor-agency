@@ -25,9 +25,9 @@ blocks:
       - type: image
         imageOverlayTitle: AIMS
         imageOverlayText: >-
-          Helping Independent Schools in Maryland and Washington DC Through a Variety of Digital Training & Technology Workshops.
+          Helping Independent Schools in Maryland and Washington DC Through Digital Training & Technology Workshops.
 
 
-          [View Project >](#)
+          [View Project >](/projects/aims)
         imageSrc: /aims-workshop.jpg
 ---
