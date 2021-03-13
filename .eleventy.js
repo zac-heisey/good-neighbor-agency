@@ -2,9 +2,10 @@
 
 module.exports = function(eleventyConfig) {
 
-  // Add passthrough directories
+  // Add passthrough directories & files
   eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.addPassthroughCopy('admin');
+  eleventyConfig.addPassthroughCopy('_redirects');
 
   // Sections collection (sorted by 'order' field)
   eleventyConfig.addCollection('sections', collection => {
