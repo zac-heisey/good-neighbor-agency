@@ -35,5 +35,6 @@ blocks:
       
       - Choose Your Own Digital Adventure
 
+
       ![AIMS digital workshop](/aims-workshop-2.png)
 ---

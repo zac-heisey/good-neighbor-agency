@@ -195,7 +195,14 @@ h3 {
 
 }
 
-p {
+ul {
+
+  list-style-position: inside;
+  margin-inline-start: 1rem;
+
+}
+
+p, li {
 
   font-size: clamp(1rem, 1.25vw, 1.125rem);
 
