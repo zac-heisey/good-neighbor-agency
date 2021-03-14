@@ -211,6 +211,7 @@ p, li {
 p.sub-heading {
 
   font-size: clamp(1rem, 1.39vw, 1.25rem);
+  font-weight: 700;
 
 }
 
@@ -701,12 +702,6 @@ section .content .lock > div + div {
 
 }
 
-.image-grid .container .text-overlay .sub-heading {
-
-  font-weight: 700;
-
-}
-
 .image-grid .container .text-overlay .wrapper {
 
   opacity: 0;
@@ -862,12 +857,6 @@ section .content .lock > div + div {
   height: 0;
   padding: 2rem;
   transition: height 0.5s;
-
-}
-
-.carousel .image .text-overlay .sub-heading {
-
-  font-weight: 700;
 
 }
 
