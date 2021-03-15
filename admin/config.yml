@@ -36,8 +36,8 @@ collections:
         name: "header"
         widget: "object"
         fields:
-          - { label: "Main Heading", name: "mainHeading", widget: "markdown" }
-          - { label: "Sub-Heading", name: "subHeading", widget: "text" }
+          - { label: "Main Heading", name: "mainHeading", widget: "string" }
+          - { label: "Sub-Heading", name: "subHeading", widget: "markdown" }
           - { label: "Background Image", name: "bgImage", widget: "image", required: false }
       - label: "Blocks"
         name: "blocks"
@@ -74,8 +74,8 @@ collections:
         name: "header"
         widget: "object"
         fields:
-          - { label: "Main Heading", name: "mainHeading", widget: "markdown" }
-          - { label: "Sub-Heading", name: "subHeading", widget: "text" }
+          - { label: "Main Heading", name: "mainHeading", widget: "string" }
+          - { label: "Sub-Heading", name: "subHeading", widget: "markdown" }
           - { label: "Background Image", name: "bgImage", widget: "image", required: false }
       - label: "Blocks"
         name: "blocks"

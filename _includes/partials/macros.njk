@@ -6,7 +6,7 @@
 
   <div class="lock">
     <h1>{{ mainHeading | safe }}</h1>
-    <p class="sub-heading">{{ subHeading | safe }}</p>
+    <p class="sub-heading">{{ subHeading | markdownify | safe }}</p>
   </div>
 
 </header>
