@@ -208,13 +208,6 @@ p, li {
 
 }
 
-p.sub-heading {
-
-  font-size: clamp(1rem, 1.39vw, 1.25rem);
-  font-weight: 700;
-
-}
-
 a {
 
   color: var(--pink);
@@ -467,9 +460,16 @@ section header > .lock h1 {
 
 }
 
-section header > .lock p.sub-heading {
+section header > .lock .sub-heading {
 
   max-width: 520px;
+
+}
+
+.sub-heading {
+
+  font-size: clamp(1rem, 1.39vw, 1.25rem);
+  font-weight: 700;
 
 }
 
