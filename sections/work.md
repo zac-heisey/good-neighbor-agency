@@ -5,7 +5,7 @@ permalink: false
 header:
   mainHeading: Our<br>Work
   subHeading: From digital strategy to web design, branding to technology
-    consulting, our work is geared toward helping you do good, <i>better</i>.
+    consulting, our work is geared toward helping you do good, *better*.
   bgImage: null
 blocks:
   - type: richText
