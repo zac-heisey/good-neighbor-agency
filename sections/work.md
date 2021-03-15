@@ -4,8 +4,9 @@ order: 4
 permalink: false
 header:
   mainHeading: Our<br>Work
-  subHeading: From digital strategy to web design, software selection to technology consulting, our work is geared toward helping you do good, <i>better</i>.
-  bgImage:
+  subHeading: From digital strategy to web design, branding to technology
+    consulting, our work is geared toward helping you do good, <i>better</i>.
+  bgImage: null
 blocks:
   - type: richText
     body: >-
@@ -17,7 +18,8 @@ blocks:
       - type: image
         imageOverlayTitle: Forest Green Rovers FC
         imageOverlayText: >-
-          Providing FGR Fans with an Immersive Match Day Experience at the World's Greenest Football Stadium.
+          Providing FGR Fans with an Immersive Match Day Experience at the
+          World's Greenest Football Stadium.
 
 
           [View Project >](/projects/fgr-eco-park)
@@ -25,7 +27,8 @@ blocks:
       - type: image
         imageOverlayTitle: AIMS
         imageOverlayText: >-
-          Helping Independent Schools in Maryland and Washington DC Through Digital Training & Technology Workshops.
+          Helping Independent Schools in Maryland and Washington DC Through
+          Digital Training & Technology Workshops.
 
 
           [View Project >](/projects/aims)
