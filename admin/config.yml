@@ -36,7 +36,7 @@ collections:
         name: "header"
         widget: "object"
         fields:
-          - { label: "Main Heading", name: "mainHeading", widget: "string", hint: "Add <br> where you want a line break }
+          - { label: "Main Heading", name: "mainHeading", widget: "string", hint: "Add <br> where you want a line break" }
           - { label: "Sub-Heading", name: "subHeading", widget: "markdown" }
           - { label: "Background Image", name: "bgImage", widget: "image", required: false }
       - label: "Blocks"
