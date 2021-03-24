@@ -52,6 +52,20 @@ blocks:
 
 
           **Kate M.**, COO, Waterfront Alliance
+      - type: text
+        body: >-
+          "AIMS connected with Zac after a workshop designed for nonprofit use
+          of Google Ads. We hired him to help us understand our own Google
+          Analytics Dashboard, and his straightforward, upbeat approach made it
+          all so accessible. From that moment on, he has been our lead
+          strategist on Web site streamlining and engagement. Zac has the rare
+          ability to help small organizations like ours to both maximize our
+          resources, yet think innovatively about connecting with our
+          audience—all within our budget. He genuinely cares about helping
+          organizations find the best solution."
+
+
+          **Alecia B-D.**, Director of Outreach and Professional Development, AIMS
   - type: logoGrid
     logos:
       - imageAltText: Ulman Cancer Foundation logo
