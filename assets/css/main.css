@@ -808,14 +808,20 @@ section .content .lock > div + div {
 
 }
 
+.carousel .item .rich-text > p {
+
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+}
+
 .carousel .controls {
 
-  position: absolute;
-  top: 4rem;
-  left: -1rem;
-  right: -1rem;
   display: flex;
   justify-content: space-between;
+  margin: 1rem 0;
 
 }
 
@@ -823,8 +829,20 @@ section .content .lock > div + div {
 
   .carousel .controls {
 
+    position: absolute;
+    top: calc(50% - 2rem);
     left: -2rem;
     right: -2rem;
+
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .carousel .item .rich-text > p {
+
+    display: block;
 
   }
 
