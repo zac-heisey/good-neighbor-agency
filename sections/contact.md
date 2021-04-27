@@ -4,8 +4,7 @@ order: 5
 permalink: false
 header:
   mainHeading: Let's<br>Chat
-  subHeading: Ready to kickoff your next project? Tell us about your organization,
-    your mission, and how Good Neighbor can help.
+  subHeading: Ready to kickoff your next project? Tell us about your organization, your mission, and how Good Neighbor can help.
   bgImage: null
 blocks:
   - type: richText

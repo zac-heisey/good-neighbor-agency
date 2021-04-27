@@ -18,8 +18,14 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Image", name: "image", widget: "image", hint: "Ideal Width: 1208 pixels", required: false }
       - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: "[post]" }
+      - label: "Header"
+        name: "header"
+        widget: "object"
+        fields:
+          - { label: "Main Heading", name: "mainHeading", widget: "string", hint: "Add <br> where you want a line break" }
+          - { label: "Sub-Heading", name: "subHeading", widget: "markdown" }
+          - { label: "Background Image", name: "bgImage", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Projects"
     name: "projects"
