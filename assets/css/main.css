@@ -228,6 +228,15 @@ a.active {
 
 }
 
+blockquote {
+
+  font-style: italic;
+  margin: 1rem;
+  padding: 0 1rem;
+  border-left: 5px solid var(--yellow);
+
+}
+
 /* Replace system font with custom fonts once loaded */
 
 .fonts-loaded body {
@@ -454,9 +463,16 @@ section header {
 
 }
 
+section header > .lock {
+
+  margin-top: 3rem;
+  
+}
+
 section header > .lock h1 {
 
   display: inline-block;
+  max-width: 700px;
 
 }
 
@@ -660,6 +676,16 @@ section .content .lock > div + div {
     background-image: linear-gradient(0deg, rgba(213, 159, 255, 0.65) 0%, rgba(213, 159, 255, 0.65) 100%), url('https://res.cloudinary.com/zheisey/image/upload/good-neighbor/better-days-ahead.jpg');
 
   }
+
+}
+
+/*== Post Styles ==*/
+
+/* Main post page list */
+
+ul.post-list {
+
+  margin: 1rem;
 
 }
 
