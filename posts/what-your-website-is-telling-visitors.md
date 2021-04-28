@@ -13,7 +13,7 @@ header:
 ---
 Branding can be a tough thing to define. Is it your logo? Your tagline? Is the products your sell or the services you offer? Or is it the way you present all of those things to your target audience? According to BusinessDictionary.com, branding is defined as:
 
-> *"The process involved in creating a unique name and image for a product in the consumers’ mind, mainly through advertising campaigns with a consistent theme. Branding aims to establish a significant and differentiated presence in the market that attracts and retains loyal customers."*
+> "The process involved in creating a unique name and image for a product in the consumers’ mind, mainly through advertising campaigns with a consistent theme. Branding aims to establish a significant and differentiated presence in the market that attracts and retains loyal customers."
 
 In our digital-first society, your company’s website is likely the main hub for all customer engagement — from education and information gathering, to sales and customer service. As [this article](http://wpengine.com/2015/06/19/how-brands-became-publishers-and-what-it-means-to-your-customer-engagement/) from WP Engine notes, “Today, the website is sometimes the first interaction a brand has with a new customer, and often the thing existing customers interact with most often. It’s not just another form of billboard, it *is* the brand.”
 
