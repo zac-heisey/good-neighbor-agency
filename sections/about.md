@@ -9,7 +9,16 @@ header:
   bgImage: null
 blocks:
   - type: richText
-    body: "## We are Good Neighbor."
+    body: |-
+      ## We are Good Neighbor.
+
+      We help socially conscious organizations with:
+
+      * Branding & Digital Strategy
+      * UX/UI & Prototyping
+      * Web & Graphic Design
+      * Marketing & Campaign Development
+      * Software & Technology Consulting
   - type: imageGrid
     images:
       - imageOverlayTitle: Zac Heisey · Partner
