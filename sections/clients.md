@@ -66,6 +66,16 @@ blocks:
 
 
           **Alecia B-D.**, Director of Outreach and Professional Development, AIMS
+      - type: text
+        body: >-
+          "I’ve worked with Zac for several years and on many different
+          projects. He has a great personality and working with him is
+          stress-free. I describe him as delivering amazing work without ANY
+          drama. He’s a true partner. I recommend Zac as often as I can to
+          others looking to develop or redevelop their website."
+
+
+          **Lara A.**, President, Team Business
   - type: logoGrid
     logos:
       - imageAltText: Ulman Cancer Foundation logo
