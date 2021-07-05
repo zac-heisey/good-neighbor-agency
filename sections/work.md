@@ -26,6 +26,14 @@ blocks:
           [View Project >](/projects/fgr-eco-park)
         imageSrc: /fgr-eco-park.png
       - type: image
+        imageOverlayTitle: Secure Information Project
+        imageOverlayText: >-
+          Helping SIP establish a web presence to serve at-risk communities in Philadelphia and beyond.
+
+
+          [View Project >](/projects/sip)
+        imageSrc: /sip-featured.jpg
+      - type: image
         imageOverlayTitle: AIMS
         imageOverlayText: >-
           Helping Independent Schools in Maryland and Washington DC Through
