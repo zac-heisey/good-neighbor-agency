@@ -48,7 +48,7 @@ blocks:
       ![image of two website wireframes for Secure Information Project with a yellow background](/sip-wireframes.png)
 
 
-      We delivered a fully custom website to SIP that featured a component-driven approach to content creation. This allowed editors to mix and match different components to easily create customized pages. The website is fully responsive and extremely performant due to the fact that we did not use any bulky frameworks and limited 3rd part resources.
+      We delivered a fully custom website to SIP that featured a component-driven approach to content creation. This allowed editors to mix and match different components to easily create customized pages. The website is fully responsive and extremely performant due to the fact that we strictly limited our use of frameworks and 3rd party resources.
 
 
       ![image of homepage mockup for Secure Information Project on both desktop and mobile devices](/sip-mockups.png)
