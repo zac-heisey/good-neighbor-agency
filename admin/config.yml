@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-publish_mode: editorial_workflow # Adds interface for drafting, previewing, and approving content
 media_library: # Tells Netlify CMS to upload new photos to Cloudinary
   name: cloudinary
   output_filename_only: true
