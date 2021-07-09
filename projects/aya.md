@@ -1,11 +1,11 @@
 ---
 layout: layouts/project.njk
 title: Access Youth Academy
-description: Crafting a fresh visual identity to support AYA in providing academic mentorship and urban squash.. View this and other projects from Good Neighbor
+description: Crafting a fresh visual identity to support AYA in providing academic mentorship and urban squash. View this and other projects from Good Neighbor
   Agency.
 header:
   mainHeading: Access Youth Academy
-  subHeading: TBD
+  subHeading: Crafting a fresh visual identity to support AYA in providing academic mentorship and urban squash
   bgImage: /aya-featured.jpg
 blocks:
   - type: richText
