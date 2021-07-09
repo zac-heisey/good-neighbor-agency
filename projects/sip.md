@@ -7,7 +7,7 @@ description: Helping SIP establish a web presence to serve at-risk communities
 header:
   mainHeading: Secure Information Project
   subHeading: Helping SIP establish a web presence to serve at-risk communities in
-    Philadelphia and beyond.
+    Philadelphia and beyond
   bgImage: /sip-featured.png
 blocks:
   - type: richText
