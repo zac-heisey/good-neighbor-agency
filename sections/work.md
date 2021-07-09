@@ -34,10 +34,18 @@ blocks:
           [View Project >](/projects/sip)
         imageSrc: /sip-featured.jpg
       - type: image
+        imageOverlayTitle: Access Youth Academy
+        imageOverlayText: >-
+          Crafting a fresh visual identity to support AYA in providing academic mentorship and urban squash.
+
+
+          [View Project >](/projects/aya)
+        imageSrc: /aya-featured.jpg
+      - type: image
         imageOverlayTitle: AIMS
         imageOverlayText: >-
-          Helping Independent Schools in Maryland and Washington DC Through
-          Digital Training & Technology Workshops.
+          Educating independent schools in Maryland and Washington DC through
+          digital training & technology workshops.
 
 
           [View Project >](/projects/aims)
