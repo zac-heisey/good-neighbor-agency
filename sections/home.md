@@ -9,7 +9,7 @@ header:
 blocks:
   - type: richText
     body: >-
-      ## Your Digital Agency Next Door.
+      ## Your Social Impact Agency Next Door.
 
 
       We help purpose-driven brands and organizations solve problems through strategy, design, and technology. If your mission is to do good, we can help you do it better. We believe in outcomes over deliverables , solutions over services, and people over profit.[](/#about)
