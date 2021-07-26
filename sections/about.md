@@ -12,13 +12,14 @@ blocks:
     body: |-
       ## We are Good Neighbor.
 
-      We help socially conscious organizations with:
+      We help social purpose organizations with:
 
-      * Branding & Digital Strategy
-      * UX/UI & Prototyping
-      * Web & Graphic Design
-      * Marketing & Campaign Development
-      * Software & Technology Consulting
+      * User Research
+      * UX/UI Design
+      * Prototyping
+      * Usability Testing
+      * Branding
+      * Training & Workshops
   - type: imageGrid
     images:
       - imageOverlayTitle: Zac Heisey · Partner
