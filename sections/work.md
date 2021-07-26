@@ -13,7 +13,7 @@ blocks:
       ## We Sell Solutions, Not Services.
 
 
-      Organizations don't just hire us to build websites or improve their brand. They partner with us to fix pain points, improve outcomes, and drive *real* results. Check out some of our previous work to get an idea of our capabilities and creativity.
+      Organizations don't just hire us to improve user experience or build their brand. They partner with us to fix pain points, improve outcomes, and drive *real* results. Check out some of our previous work to get an idea of our capabilities and creativity.
   - type: carousel
     items:
       - type: image
@@ -28,7 +28,8 @@ blocks:
       - type: image
         imageOverlayTitle: Secure Information Project
         imageOverlayText: >-
-          Helping SIP establish a web presence to serve at-risk communities in Philadelphia and beyond.
+          Helping SIP establish a web presence to serve at-risk communities in
+          Philadelphia and beyond.
 
 
           [View Project >](/projects/sip)
@@ -36,7 +37,8 @@ blocks:
       - type: image
         imageOverlayTitle: Access Youth Academy
         imageOverlayText: >-
-          Crafting a fresh visual identity to support AYA in providing academic mentorship and urban squash.
+          Crafting a fresh visual identity to support AYA in providing academic
+          mentorship and urban squash.
 
 
           [View Project >](/projects/aya)
